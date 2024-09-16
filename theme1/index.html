@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Readex Pro", sans-serif;
+        background-color: #f3f3f3;
+      }
+      .pr-image {
+        object-fit: contain;
+      }
+      .pr-image:hover {
+        transform: rotate(-4deg) scale(1.4);
+        transition: transform 0.8s;
+      }
+      .filter a,
+      .product-list a {
+        text-decoration: none;
+      }
+      .filter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      .filter a:hover {
+        border-bottom: 1px solid #222 !important;
+      }
+      .filter a.active {
+        border-bottom: 1px solid #222 !important;
+      }
+      [lang="en"] {
+        direction: ltr;
+      }
+      [lang="ar"] {
+        direction: rtl;
+      }
+      .language-content {
+        display: none;
+      }
+      .language-content.active {
+        display: block;
+      }
+      .footer h5 {
+        font-size: 16px;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div
+      class="p-2 d-flex flex-column flex-md-row align-items-center px-md-4 mb-4 bg-white border-bottom"
+    >
+      <div class="container">
+        <div class="row position-relative">
+          <div class="w-100">
+            <a
+              href="#"
+              id="language-switcher"
+              class="position-absolute start-0  text-decoration-none text-center d-flex flex-column gap-0 justify-content-center align-items-center"
+              style="margin-top: 10px; margin-left: 10px"
+            >
+              <img src="img/gb.png" alt="lng" style="max-width: 30px" />
+              <span id="switcher-text" class="">English</span>
+            </a>
+          </div>
+
+          <div class="w-100">
+            <a
+              href="#"
+              style="display: block; text-align: center; margin: 0 auto"
+            >
+              <img
+                src="img/logo.jpg"
+                alt="logo"
+                style="margin: 3px auto; max-height: 60px"
+                class="logo"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container my-5">
+      <!-- Product filtration -->
+      <div class="row my-3 filter flex-column flex-md-row">
+        <div class="filter" id="filter-options"></div>
+      </div>
+
+      <!-- Products Section -->
+      <div id="product-list" class="row product-list"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-5 footer">
+      <div class="container">
+        <div class="row">
+          <!-- Useful Links and About Us -->
+          <div class="col-md-4 mb-4" id="useful-links">
+            <h5 id="useful-links-title"></h5>
+            <ul class="list-unstyled p-2 pt-0 " style="color: blue;" >
+              <li class="mb-2">
+                <a href="#"  id="unclaimed-products"></a>
+              </li>
+              <li class="mb-2"><a href="#"  id="why-us"></a></li>
+              <li class="mb-2"><a href="#"  id="about-us"></a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-4 mb-4" id="contact-info">
+            <h5 id="contact-info-title"></h5>
+            <p id="contact-person"></p>
+            <p id="contact-address1"></p>
+            <p id="contact-address2"></p>
+          </div>
+
+          <!-- Accept Payment -->
+          <div class="col-md-4 mb-4 p-2 pt-0" id="payment-info">
+            <h5 id="payment-info-title"></h5>
+            <p id="payment-method"></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const filters = {
+        ar: {
+          all: "الجميع",
+          cosmetics: "مستحضرات التجميل",
+          electronics: "إلكترونيات",
+          watches: "الساعات",
+          mobile: "متحرك",
+          kitchen: "مطبخ",
+          car: "سيارة",
+          other: "آخر",
+        },
+        en: {
+          all: "All",
+          cosmetics: "Cosmetics",
+          electronics: "Electronics",
+          watches: "Watches",
+          mobile: "Mobile",
+          kitchen: "Kitchen",
+          car: "Car",
+          other: "Other",
+        },
+      };
+
+      const products = {
+        ar: [
+          {
+            name: "DX2570 - مسدس رش كهربائي",
+            price: "99 ريال",
+            originalPrice: "149 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "50% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+          {
+            name: "سماعات بلوتوث لاسلكية",
+            price: "199 ريال",
+            originalPrice: "299 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "33% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+          {
+            name: "ساعة ذكية مقاومة للماء",
+            price: "399 ريال",
+            originalPrice: "499 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "20% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+
+          {
+            name: "DX2570 - مسدس رش كهربائي",
+            price: "99 ريال",
+            originalPrice: "149 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "50% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+          {
+            name: "سماعات بلوتوث لاسلكية",
+            price: "199 ريال",
+            originalPrice: "299 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "33% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+          {
+            name: "ساعة ذكية مقاومة للماء",
+            price: "399 ريال",
+            originalPrice: "499 ريال",
+            image: "https://via.placeholder.com/360x360",
+            discount: "20% خصم",
+            freeDelivery: "توصيل مجاني",
+            vat: "15٪ - ضريبة القيمة المضافة متضمنة",
+          },
+        ],
+        en: [
+          {
+            name: "DX2570 - Electric Spray Gun",
+            price: "99 SAR",
+            originalPrice: "149 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "50% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+          {
+            name: "Wireless Bluetooth Headphones",
+            price: "199 SAR",
+            originalPrice: "299 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "33% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+          {
+            name: "Waterproof Smart Watch",
+            price: "399 SAR",
+            originalPrice: "499 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "20% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+
+          {
+            name: "DX2570 - Electric Spray Gun",
+            price: "99 SAR",
+            originalPrice: "149 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "50% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+          {
+            name: "Wireless Bluetooth Headphones",
+            price: "199 SAR",
+            originalPrice: "299 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "33% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+          {
+            name: "Waterproof Smart Watch",
+            price: "399 SAR",
+            originalPrice: "499 SAR",
+            image: "https://via.placeholder.com/360x360",
+            discount: "20% Off",
+            freeDelivery: "Free Delivery",
+            vat: "15% VAT Included",
+          },
+        ],
+      };
+      const footerContent = {
+        ar: {
+          titles: {
+            usefulLinks: "روابط مفيدة و عن الشركة",
+            contactInfo: "معلومات الاتصال",
+            paymentInfo: "قبول الدفع",
+          },
+          usefulLinks: {
+            unclaimedProducts: "المنتجات غير القابلة للاسترداد",
+            whyUs: "لماذا نحن؟",
+            AboutUs: "عنا",
+          },
+          contactInfo: {
+            person: "فيسال هاشم الشمري",
+            address1: "شارع عبد الله عزيز،",
+            address2: "البلد، جدة، السعودية",
+          },
+          paymentInfo: "الدفع عند الاستلام",
+        },
+        en: {
+          titles: {
+            usefulLinks: "Useful Links and About Us",
+            contactInfo: "Contact Info",
+            paymentInfo: "Accept Payment",
+          },
+          usefulLinks: {
+            unclaimedProducts: "Un-Claimable Products",
+            whyUs: "Why Us?",
+            AboutUs: "About Us",
+          },
+          contactInfo: {
+            person: "Faisal Hashim AL Shamri",
+            address1: "Abdullah Aziz Street,",
+            address2: "Al Balad, Jeddah, KSA",
+          },
+          paymentInfo: "CASH ON DELIVERY",
+        },
+      };
+      function renderProducts() {
+        const lang = getLangFromUrl();
+        const productList = document.getElementById("product-list");
+        productList.innerHTML = products[lang]
+          .map(
+            (product) => `
+      <div class="col-md-4 col-sm-6 mb-3">
+        <div class="card h-100 border-0 rounded-top">
+          <a href="#">
+            <div class="position-relative overflow-hidden rounded-top">
+              <img
+                src="${product.image}"
+                class="card-img-top pr-image"
+                alt="${product.name}"
+              />
+              <span
+                class="position-absolute end-0 bg-danger text-white rounded-start"
+                style="padding: 2px; top: 5px"
+                >${product.discount}</span
+              >
+              <span
+                class="position-absolute start-0 text-white rounded-end"
+                style="background-color: #459a44; bottom: 5px; padding: 2px"
+                >${product.freeDelivery}</span
+              >
+            </div>
+
+            <div class="card-body" dir=${
+              products[lang] === "ar" ? "rtl" : "ltr"
+            }">
+              <h3 class="card-title" style="font-size: 18px; color: #222">
+                ${product.name}
+              </h3>
+              <p class="card-text">
+                <strong style="font-size: 18px; color: #ed1b24"
+                  >${product.price}</strong
+                >
+                <span class="text-muted text-decoration-line-through"
+                  >${product.originalPrice}</span
+                >
+              </p>
+              <p class="card-text" style="color: #095e08">
+                <small style="font-size: 16px">${product.vat}</small>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    `
+          )
+          .join("");
+      }
+
+      function updateFilters() {
+        const lang = getLangFromUrl();
+        const filterContainer = document.getElementById("filter-options");
+        filterContainer.innerHTML = "";
+
+        for (const key in filters[lang]) {
+          filterContainer.innerHTML += `
+      <a href="#" class="border-bottom box-shadow">${filters[lang][key]}</a>
+    `;
+        }
+      }
+
+      function getLangFromUrl() {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get("lang") || "ar";
+      }
+      function updateFooter() {
+        const lang = getLangFromUrl();
+        document.getElementById("useful-links-title").textContent =
+          footerContent[lang].titles.usefulLinks;
+        document.getElementById("contact-info-title").textContent =
+          footerContent[lang].titles.contactInfo;
+        document.getElementById("payment-info-title").textContent =
+          footerContent[lang].titles.paymentInfo;
+
+        document.getElementById("unclaimed-products").textContent =
+          footerContent[lang].usefulLinks.unclaimedProducts;
+        document.getElementById("why-us").textContent =
+          footerContent[lang].usefulLinks.whyUs;
+        document.getElementById("about-us").textContent =
+          footerContent[lang].usefulLinks.AboutUs;
+
+        const contact = footerContent[lang].contactInfo;
+        document.getElementById("contact-person").textContent = contact.person;
+        document.getElementById("contact-address1").textContent =
+          contact.address1;
+        document.getElementById("contact-address2").textContent =
+          contact.address2;
+
+        document.getElementById("payment-method").textContent =
+          footerContent[lang].paymentInfo;
+      }
+
+      function updatePageContent() {
+        const lang = getLangFromUrl();
+        document.documentElement.lang = lang;
+        document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+
+        const switcherText = lang === "ar" ? "English" : "العربية";
+        document.getElementById("switcher-text").textContent = switcherText;
+        updateFooter();
+        renderProducts();
+        updateFilters();
+      }
+
+      document
+        .getElementById("language-switcher")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentLang = getLangFromUrl();
+          const newLang = currentLang === "ar" ? "en" : "ar";
+          window.location.search = `?lang=${newLang}`;
+        });
+
+      updatePageContent();
+    </script>
+  </body>
+</html>
