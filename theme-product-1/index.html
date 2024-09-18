@@ -1,573 +1,473 @@
 <!DOCTYPE html>
 <html lang="ar">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صفحة المنتج</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css"
-      rel="stylesheet"
-    />
-    <!-- Splide.js CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body dir="rtl">
-    <div class="w-100 header-delivery position-fixed top-0">
-      <div class="row p-2 text-center">
-        <div class="d-flex justify-content-center align-items-center gap-2">
-          <span>
-            <img
-              width="25"
-              height="25"
-              src="./img/fast-delivery.svg"
-              alt="fast-delivery.svg"
-              srcset=""
-          /></span>
-          <span class="dark-blue"> شحن مجاني و دفع عند الاستلام </span>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>صفحة المنتج</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+  <!-- Splide.js CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body dir="rtl">
+
+  <div class="w-100 header-delivery position-fixed top-0">
+    <div class="row p-2 text-center">
+      <div class="d-flex justify-content-center align-items-center gap-2">
+        <span>
+          <svg style="height: 25px; width: 25px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+            viewBox="0 0 128 128">
+            <path fill="#ff9647"
+              d="M127.95,86.81c-1.73-10.93-9.55-17.2-21.45-17.2q-.675,0-1.32.03a45.04526,45.04526,0,0,0-4.74-23.35l-2.86-5.65a19.58105,19.58105,0,0,0,3.05-13.26C99.6,18,93.91,14.79,93.27,14.45A3.97988,3.97988,0,0,0,91.42,14a20.87086,20.87086,0,0,0-10.5199,3.17578A10.99433,10.99433,0,0,1,79,39c-.24274,0-.48022-.02087-.71906-.03644.43286.67169.83441,1.23285,1.149,1.64642l4.73,19.02a20.07922,20.07922,0,0,1-2.8,10.96L74.25,82.65H62.91L56.92,65.5H62a4,4,0,0,0,4-4v-3a8,8,0,0,0-8-8H42v-24a6,6,0,0,0-6-6H6a6,6,0,0,0-6,6v29a2,2,0,0,0,2,2H40a2,2,0,0,0,2-2v-1H58a4,4,0,0,1,4,4v3H0a3.99891,3.99891,0,0,0,4,4H7.85c-.52,3.39-3.96,6.34-5.83,7.5A4.00444,4.00444,0,0,0,.1,77.37c0,.01.01.01.01.02A1.73822,1.73822,0,0,0,0,78V90.6a13.4351,13.4351,0,0,0,9.71,12.88,14.974,14.974,0,0,0,28.42.52H94.87a14.993,14.993,0,0,0,28.87756-2.24469A14.83,14.83,0,0,0,121.51,90.79c.59.19.95.33.96.34a4.02244,4.02244,0,0,0,4.01-.56A3.99586,3.99586,0,0,0,127.95,86.81ZM25,33a2.00591,2.00591,0,0,1-2,2H19a2.00591,2.00591,0,0,1-2-2V25h8Zm-1,77a10.99868,10.99868,0,0,1-9.78-6H33.78A10.99868,10.99868,0,0,1,24,110ZM13.38,100A9.40412,9.40412,0,0,1,4,90.6L5,80.35a57.91317,57.91317,0,0,1,11.84-1.36c7.50995,0,13.23,2.02,17.00995,6,5.67,5.97,5.39,14.72,5.38,14.8,0,.07.01.14.01.21ZM109,110a10.99868,10.99868,0,0,1-9.78-6h.77a3.98609,3.98609,0,0,0,3.63-2.35l.79,1a6.00024,6.00024,0,1,0,9.4-7.46l-3.92-4.94a11.8683,11.8683,0,0,1,4.37-.73c.11,0,.21.01.31.01A10.99015,10.99015,0,0,1,109,110Z"
+              class="color000000 svgShape" />
+            <path fill="#ff9647"
+              d="M79,35a7,7,0,1,1,7-7A7.00786,7.00786,0,0,1,79,35Zm0-10a3,3,0,1,0,3,3A3.00328,3.00328,0,0,0,79,25Z"
+              class="color000000 svgShape" />
+          </svg>
+        </span>
+        <span class="dark-blue"> شحن مجاني و دفع عند الاستلام </span>
       </div>
     </div>
-    <div class="container mt-5">
-      <h3 class="dark-blue text-center pt-4 fs-2">.COD<b>ELIVERY</b></h3>
+  </div>
+  <div class="container mt-5">
+    <h3 class="dark-blue text-center pt-4 fs-2">.COD<b>ELIVERY</b></h3>
+  </div>
+  <div class="container pt-5">
+    <div
+      class="d-flex justify-content-center flex-column flex-md-row align-items-center gap-2 gap-md-4 counter-container text-center">
+      <span>استفد من خصم 40% - الوقت المتبقي لانتهاء العرض: </span>
+      <span id="countdown" class="countdown d-flex justify-content-center align-items-start gap-4">
+        <div class="d-flex flex-column gap-2">
+          <span id="day"></span>
+          <span class="countdown-text">يوم</span>
+        </div>
+        <span class="d-flex justify-content-center align-items-start">:</span>
+        <div class="d-flex flex-column gap-2">
+          <span id="hour"></span>
+          <span class="countdown-text">ساعة</span>
+        </div>
+        <span class="d-flex justify-content-center align-items-start">:</span>
+        <div class="d-flex flex-column gap-2">
+          <span id="minute"></span>
+          <span class="countdown-text">دقيقة</span>
+        </div>
+        <span class="d-flex justify-content-center align-items-start">:</span>
+        <div class="d-flex flex-column gap-2">
+          <span id="sec"></span>
+          <span class="countdown-text">ثانية</span>
+        </div>
+      </span>
     </div>
-    <div class="container pt-5">
-      <div class="row">
-        <div
-          class="d-flex justify-content-center align-items-center gap-5 counter-container"
-        >
-          <span>استفد من خصم 40% - الوقت المتبقي لانتهاء العرض: </span>
-          <span
-            id="countdown"
-            class="countdown d-flex justify-content-center align-items-start gap-4"
-          >
-            <div class="d-flex flex-column gap-2">
-              <span id="day"></span>
-              <span class="countdown-text">يوم</span>
-            </div>
-            <span class="d-flex justify-content-center align-items-start"
-              >:</span
-            >
-            <div class="d-flex flex-column gap-2">
-              <span id="hour"></span>
-              <span class="countdown-text">ساعة</span>
-            </div>
-            <span class="d-flex justify-content-center align-items-start"
-              >:</span
-            >
-            <div class="d-flex flex-column gap-2">
-              <span id="minute"></span>
-              <span class="countdown-text">دقيقة</span>
-            </div>
-            <span class="d-flex justify-content-center align-items-start"
-              >:</span
-            >
-            <div class="d-flex flex-column gap-2">
-              <span id="sec"></span>
-              <span class="countdown-text">ثانية</span>
-            </div>
-          </span>
+
+  </div>
+
+  <!-- Product Slider Section -->
+  <section class="container mt-5 product-details p-4 rounded-2" id="product-card">
+    <div class="row pt-3">
+      <!-- Product Info -->
+
+      <div class="col-md-6 product-slider">
+        <!-- Main Slider -->
+        <div id="main-slider" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list rounded-2">
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+1" alt="صورة المنتج 1" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+2" alt="صورة المنتج 2" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+3" alt="صورة المنتج 3" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+4" alt="صورة المنتج 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+5" alt="صورة المنتج 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/530?text=صورة+المنتج+6" alt="صورة المنتج 6" />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Thumbnail Slider -->
+        <div id="thumbnail-slider" class="splide mt-3">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+1" alt="مُصغرة 1" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+2" alt="مُصغرة 2" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+3" alt="مُصغرة 3" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+4" alt="مُصغرة 4" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+5" alt="مُصغرة 5" />
+              </li>
+              <li class="splide__slide">
+                <img src="https://via.placeholder.com/150x100?text=مُصغرة+6" alt="مُصغرة 6" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- Product Slider Section -->
-    <section class="container mt-5 product-details p-4 rounded-2">
-      <div class="row pt-3">
-        <!-- Product Info -->
-
-        <div class="col-md-6 product-slider">
-          <!-- Main Slider -->
-          <div id="main-slider" class="splide">
-            <div class="splide__track">
-              <ul class="splide__list rounded-2">
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+1"
-                    alt="صورة المنتج 1"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+2"
-                    alt="صورة المنتج 2"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+3"
-                    alt="صورة المنتج 3"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+4"
-                    alt="صورة المنتج 4"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+5"
-                    alt="صورة المنتج 5"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/530?text=صورة+المنتج+6"
-                    alt="صورة المنتج 6"
-                  />
-                </li>
-              </ul>
+      <div class="col-md-6">
+        <div class="row align-items-center flex-md-nowrap">
+          <!-- Rating Value and Stars -->
+          <div class="col-md-3 p-4">
+            <div class="d-flex align-items-center rating-container gap-3">
+              <div class="rating-value dark-blue" style="font-size: 15px">
+                4.00
+              </div>
+              <div class="rating-stars d-flex">
+                <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                  <path fill="rgba(193,193,193,1)"
+                    d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+              </div>
             </div>
           </div>
-
-          <!-- Thumbnail Slider -->
-          <div id="thumbnail-slider" class="splide mt-3">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+1"
-                    alt="مُصغرة 1"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+2"
-                    alt="مُصغرة 2"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+3"
-                    alt="مُصغرة 3"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+4"
-                    alt="مُصغرة 4"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+5"
-                    alt="مُصغرة 5"
-                  />
-                </li>
-                <li class="splide__slide">
-                  <img
-                    src="https://via.placeholder.com/150x100?text=مُصغرة+6"
-                    alt="مُصغرة 6"
-                  />
-                </li>
-              </ul>
+          <div class="col-md-1">
+            <div class="line"></div>
+          </div>
+          <!-- Rating Details -->
+          <div class="col-md-6 text-start">
+            <div class="d-flex align-items-center justify-content-start rating-container">
+              <div class="rating-text me-2">تقييم ٥ نجوم من اكثر من</div>
+              <div class="rating-value me-2">9</div>
+              <div class="dark-blue" style="font-size: 16px">مستخدم</div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="row align-items-center flex-md-nowrap">
-            <!-- Rating Value and Stars -->
-            <div class="col-md-3">
-              <div class="d-flex align-items-center rating-container gap-3">
-                <div class="rating-value dark-blue" style="font-size: 15px">
-                  4.00
-                </div>
-                <div class="rating-stars d-flex">
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/empty-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-1">
-              <div class="line"></div>
-            </div>
-            <!-- Rating Details -->
-            <div class="col-md-6 text-start">
-              <div
-                class="d-flex align-items-center justify-content-start rating-container"
-              >
-                <div class="rating-text me-2">تقييم ٥ نجوم من اكثر من</div>
-                <div class="rating-value me-2">9</div>
-                <div class="dark-blue" style="font-size: 16px">مستخدم</div>
-              </div>
-            </div>
+
+        <h2 class="dark-blue my-3">
+          أفضل منتوجات العناية بالجلد و البشرة طبيعية 100%
+        </h2>
+        <div class="d-flex justify-content-start align-items-center gap-3">
+          <p class="light-blue current-price"><b>$50.00</b></p>
+          <p class="text-decoration-line-through old-price">$214.00</p>
+        </div>
+        <p style="font-size: 15px" class="gray">
+          قناع الأفوكادو، بحيث تهرسين حبة أفوكادو وتخلطينها مع ملعقة كبيرة من
+          العسل وملعقتين كبيرتين من زيت الزيتون
+        </p>
+        <div class="col-md-12 price_bundles">
+          <div class="text-center" style="font-size: 20px">
+            <p class="dark-blue">للطلب يرجى إدخال معلومات الأسفل:</p>
           </div>
-
-          <h2 class="dark-blue my-3">
-            أفضل منتوجات العناية بالجلد و البشرة طبيعية 100%
-          </h2>
-          <div class="d-flex justify-content-start align-items-center gap-3">
-            <p class="light-blue current-price"><b>$50.00</b></p>
-            <p class="text-decoration-line-through old-price">$214.00</p>
-          </div>
-          <p style="font-size: 15px" class="gray">
-            قناع الأفوكادو، بحيث تهرسين حبة أفوكادو وتخلطينها مع ملعقة كبيرة من
-            العسل وملعقتين كبيرتين من زيت الزيتون
-          </p>
-          <div class="col-md-12 price_bundles">
-            <div class="text-center" style="font-size: 20px">
-              <p class="dark-blue">للطلب يرجى إدخال معلومات الأسفل:</p>
-            </div>
-            <div class="price_bundles-content mt-3">
-              <!-- First Bundle -->
-              <div class="bundle">
-                <div
-                  class="d-flex justify-content-start align-items-center"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#selector1"
-                  role="button"
-                  aria-expanded="true"
-                  aria-controls="selector1"
-                >
-                  <input
-                    class="form-check-input me-2"
-                    type="radio"
-                    name="option"
-                    id="option1"
-                  />
-                  <label
-                    class="d-flex justify-content-between align-items-center w-100"
-                    for="option1"
-                  >
-                    <p style="font-size: 20px" class="dark-blue mb-0">
-                      اريد واحده فقط
-                    </p>
-                    <div
-                      class="d-flex flex-column justify-content-start align-items-center gap-0"
-                    >
-                      <span class="current-price gray" style="font-size: 20px"
-                        >$999</span
-                      >
-                      <span class="old-price gray" style="font-size: 16px"
-                        >$1200</span
-                      >
-                    </div>
-                  </label>
-                </div>
-                <div id="selector1" class="collapse show">
-                  <div class="card-body p-1 pb-3">
-                    <div class="my-3">Color, Material</div>
-                    <div class="d-flex gap-4 align-items-center">
-                      <span> #1 </span>
-                      <select id="color1" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material1" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
+          <div class="price_bundles-content mt-3">
+            <!-- First Bundle -->
+            <div class="bundle">
+              <div class="d-flex justify-content-start align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#selector1" role="button" aria-expanded="true" aria-controls="selector1">
+                <input class="form-check-input me-2" type="radio" name="option" id="option1" />
+                <label class="d-flex justify-content-between align-items-center w-100" for="option1">
+                  <p style="font-size: 20px" class="dark-blue mb-0">
+                    اريد واحده فقط
+                  </p>
+                  <div class="d-flex flex-column justify-content-start align-items-center gap-0">
+                    <span class="current-price gray" style="font-size: 20px">$999</span>
+                    <span class="old-price gray" style="font-size: 16px">$1200</span>
                   </div>
-                </div>
+                </label>
               </div>
+              <div id="selector1" class="collapse show">
+                <div class="card-body p-1 pb-3">
+                  <div class="my-3">Color, Material</div>
+                  <div class="d-flex gap-4 align-items-center">
+                    <span> #1 </span>
+                    <select id="color1" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
 
-              <!-- Second Bundle -->
-              <div class="bundle mt-3">
-                <div
-                  class="d-flex justify-content-start align-items-center"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#selector2"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="selector2"
-                >
-                  <input
-                    class="form-check-input me-2"
-                    type="radio"
-                    name="option"
-                    id="option2"
-                  />
-                  <label
-                    class="d-flex justify-content-between align-items-center w-100"
-                    for="option2"
-                  >
-                    <p style="font-size: 20px" class="dark-blue mb-0">
-                      اشتري ٢ و احصل على خصم خاص ١٠٪
-                    </p>
-                    <div
-                      class="d-flex flex-column justify-content-start align-items-center gap-0"
-                    >
-                      <span class="current-price gray" style="font-size: 20px"
-                        >$1800</span
-                      >
-                      <span class="old-price gray" style="font-size: 16px"
-                        >$2000</span
-                      >
-                    </div>
-                  </label>
-                </div>
-                <div id="selector2" class="collapse">
-                  <div class="card-body p-1 pb-3">
-                    <div class="my-3">Color, Material</div>
-                    <div class="d-flex gap-4 align-items-center">
-                      <span> #1 </span>
-                      <select id="color2_1" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material2_1" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
-                    <div class="d-flex gap-4 align-items-center mt-3">
-                      <span> #2 </span>
-                      <select id="color2_2" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material2_2" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Third Bundle -->
-              <div class="bundle mt-3">
-                <div
-                  class="d-flex justify-content-start align-items-center"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#selector3"
-                  role="button"
-                  aria-expanded="false"
-                  aria-controls="selector3"
-                >
-                  <input
-                    class="form-check-input me-2"
-                    type="radio"
-                    name="option"
-                    id="option3"
-                  />
-                  <label
-                    class="d-flex justify-content-between align-items-center w-100"
-                    for="option3"
-                  >
-                    <p style="font-size: 20px" class="dark-blue mb-0">
-                      اشتري ٣ و احصل على خصم خاص ٢٠٪
-                    </p>
-                    <div
-                      class="d-flex flex-column justify-content-start align-items-center gap-0"
-                    >
-                      <span class="current-price gray" style="font-size: 20px"
-                        >$2400</span
-                      >
-                      <span class="old-price gray" style="font-size: 16px"
-                        >$3000</span
-                      >
-                    </div>
-                  </label>
-                </div>
-                <div id="selector3" class="collapse">
-                  <div class="card-body p-1 pb-3">
-                    <div class="my-3">Color, Material</div>
-                    <div class="d-flex gap-4 align-items-center">
-                      <span> #1 </span>
-                      <select id="color3_1" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material3_1" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
-                    <div class="d-flex gap-4 align-items-center mt-3">
-                      <span> #2 </span>
-                      <select id="color3_2" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material3_2" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
-                    <div class="d-flex gap-4 align-items-center mt-3">
-                      <span> #3 </span>
-                      <select id="color3_3" class="form-select">
-                        <option selected>اختر اللون</option>
-                        <option value="1">أحمر</option>
-                        <option value="2">أزرق</option>
-                        <option value="3">أخضر</option>
-                      </select>
-
-                      <select id="material3_3" class="form-select">
-                        <option selected>اختر المادة</option>
-                        <option value="1">حديد</option>
-                        <option value="2">خشب</option>
-                        <option value="3">بلاستيك</option>
-                      </select>
-                    </div>
+                    <select id="material1" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
                   </div>
                 </div>
               </div>
             </div>
-            <button class="btn btn-lg mt-4 w-100 p-3 bundle-btn">
-              إشتري الان - الدفع عند الإستلام
-            </button>
-            <div class="mt-4 w-100">
-              <span class="vertical-line"></span>
-            </div>
-            <div
-              class="mt-4 d-flex justify-content-around flex-row-reverse align-items-center gap-2"
-            >
-              <div class="d-flex flex-column price-features gap-1 text-center">
-                <span
-                  ><img
-                    width="45"
-                    height="45"
-                    src="./img/garanty.svg"
-                    alt="garanty"
-                /></span>
-                <span>ضمانة <br />100%</span>
-              </div>
-              <div class="d-flex flex-column price-features gap-1 text-center">
-                <span
-                  ><img
-                    width="45"
-                    height="45"
-                    src="./img/customer service.svg"
-                    alt="garanty"
-                /></span>
-                <span>عبر الهاتف <br />100%</span>
-              </div>
 
-              <div class="d-flex flex-column price-features gap-1 text-center">
-                <span
-                  ><img
-                    width="45"
-                    height="45"
-                    src="./img/pay-on-deleverysvg.svg"
-                    alt="garanty"
-                /></span>
-                <span>الدفع عند <br />الاستلام </span>
+            <!-- Second Bundle -->
+            <div class="bundle mt-3">
+              <div class="d-flex justify-content-start align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#selector2" role="button" aria-expanded="false" aria-controls="selector2">
+                <input class="form-check-input me-2" type="radio" name="option" id="option2" />
+                <label class="d-flex justify-content-between align-items-center w-100" for="option2">
+                  <p style="font-size: 20px" class="dark-blue mb-0">
+                    اشتري ٢ و احصل على خصم خاص ١٠٪
+                  </p>
+                  <div class="d-flex flex-column justify-content-start align-items-center gap-0">
+                    <span class="current-price gray" style="font-size: 20px">$1800</span>
+                    <span class="old-price gray" style="font-size: 16px">$2000</span>
+                  </div>
+                </label>
               </div>
-              <div class="d-flex flex-column price-features gap-1 text-center">
-                <span
-                  ><img
-                    width="45"
-                    height="45"
-                    src="./img/free=fast-delivery.svg"
-                    alt="garanty"
-                /></span>
-                <span>
-                  التوصيل المجاني
-                  <br />و سريع
-                </span>
+              <div id="selector2" class="collapse">
+                <div class="card-body p-1 pb-3">
+                  <div class="my-3">Color, Material</div>
+                  <div class="d-flex gap-4 align-items-center">
+                    <span> #1 </span>
+                    <select id="color2_1" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
+
+                    <select id="material2_1" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
+                  </div>
+                  <div class="d-flex gap-4 align-items-center mt-3">
+                    <span> #2 </span>
+                    <select id="color2_2" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
+
+                    <select id="material2_2" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <!-- Third Bundle -->
+            <div class="bundle mt-3">
+              <div class="d-flex justify-content-start align-items-center" data-bs-toggle="collapse"
+                data-bs-target="#selector3" role="button" aria-expanded="false" aria-controls="selector3">
+                <input class="form-check-input me-2" type="radio" name="option" id="option3" />
+                <label class="d-flex justify-content-between align-items-center w-100" for="option3">
+                  <p style="font-size: 20px" class="dark-blue mb-0">
+                    اشتري ٣ و احصل على خصم خاص ٢٠٪
+                  </p>
+                  <div class="d-flex flex-column justify-content-start align-items-center gap-0">
+                    <span class="current-price gray" style="font-size: 20px">$2400</span>
+                    <span class="old-price gray" style="font-size: 16px">$3000</span>
+                  </div>
+                </label>
+              </div>
+              <div id="selector3" class="collapse">
+                <div class="card-body p-1 pb-3">
+                  <div class="my-3">Color, Material</div>
+                  <div class="d-flex gap-4 align-items-center">
+                    <span> #1 </span>
+                    <select id="color3_1" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
+
+                    <select id="material3_1" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
+                  </div>
+                  <div class="d-flex gap-4 align-items-center mt-3">
+                    <span> #2 </span>
+                    <select id="color3_2" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
+
+                    <select id="material3_2" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
+                  </div>
+                  <div class="d-flex gap-4 align-items-center mt-3">
+                    <span> #3 </span>
+                    <select id="color3_3" class="form-select">
+                      <option selected>اختر اللون</option>
+                      <option value="1">أحمر</option>
+                      <option value="2">أزرق</option>
+                      <option value="3">أخضر</option>
+                    </select>
+
+                    <select id="material3_3" class="form-select">
+                      <option selected>اختر المادة</option>
+                      <option value="1">حديد</option>
+                      <option value="2">خشب</option>
+                      <option value="3">بلاستيك</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-lg mt-4 w-100 p-3 bundle-btn">
+            إشتري الان - الدفع عند الإستلام
+          </button>
+          <div class="mt-4 w-100">
+            <span class="vertical-line"></span>
+          </div>
+          <div class="mt-4 d-flex justify-content-around flex-row-reverse align-items-center gap-2">
+            <div class="d-flex flex-column price-features gap-1 text-center">
+              <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M85.9998 11.4668C83.8985 11.4668 81.7986 12.4854 80.5688 14.535L78.1836 18.5327C77.1516 20.2527 75.4462 21.4094 73.5141 21.9369C73.4912 21.9426 73.4698 21.9535 73.4469 21.9593C71.4918 22.4982 69.418 22.3407 67.6464 21.3546L63.5815 19.0926C59.4019 16.7706 54.2556 19.7362 54.1753 24.5236L54.0857 29.2491C54.0513 31.2443 53.1669 33.096 51.7565 34.5121C51.7393 34.5236 51.7232 34.5397 51.7118 34.5569C50.3014 35.973 48.4439 36.8517 46.4487 36.8861L41.7232 36.9645C36.9416 37.0447 33.9702 42.1966 36.2922 46.3819L38.5654 50.4691C39.5401 52.2293 39.7033 54.287 39.1701 56.2249C39.1529 56.2593 39.148 56.2913 39.1365 56.3257C38.6148 58.2463 37.4575 59.9353 35.7547 60.9616L31.7459 63.3691C27.6466 65.8287 27.6466 71.7715 31.7459 74.2311L35.7547 76.6387C37.4633 77.6649 38.6148 79.3539 39.1365 81.2746C39.148 81.309 39.1474 81.3465 39.1589 81.3866C39.6921 83.3245 39.5401 85.3879 38.5654 87.1423L36.2922 91.2296C33.9702 95.4092 36.9359 100.556 41.7232 100.636L46.4487 100.714C48.4497 100.749 50.3014 101.644 51.7118 103.055L51.7566 103.099C53.1727 104.51 54.0513 106.367 54.0857 108.362L54.1641 113.077C54.2444 117.858 59.402 120.835 63.5816 118.519L67.6688 116.246C69.4289 115.271 71.4867 115.108 73.4245 115.641C73.4589 115.652 73.4909 115.663 73.5253 115.675C75.446 116.196 77.135 117.348 78.1612 119.056L80.5688 123.065C83.0284 127.165 88.9712 127.165 91.4308 123.065L93.8383 119.056C94.8646 117.348 96.5536 116.196 98.4742 115.675C98.5086 115.663 98.5518 115.652 98.5862 115.641C100.524 115.108 102.588 115.271 104.342 116.246L108.429 118.519C112.609 120.841 117.755 117.864 117.835 113.077L117.914 108.362C117.948 106.361 118.844 104.51 120.254 103.099L120.299 103.055C121.709 101.638 123.567 100.749 125.562 100.714L130.276 100.636C135.058 100.556 138.035 95.4092 135.719 91.2296L133.445 87.1423C132.471 85.3822 132.307 83.3245 132.841 81.3866C132.852 81.3522 132.863 81.309 132.874 81.2746C133.396 79.3539 134.547 77.6649 136.256 76.6387L140.265 74.2311C144.364 71.7658 144.364 65.8345 140.265 63.3691L136.256 60.9616C134.547 59.9353 133.396 58.2463 132.874 56.3257C132.863 56.2913 132.852 56.2481 132.841 56.2137C132.307 54.2758 132.471 52.2123 133.445 50.4579L135.719 46.3707C138.041 42.1911 135.064 37.0447 130.276 36.9645L125.562 36.8861C123.561 36.8517 121.709 35.9561 120.299 34.5457L120.254 34.5009C118.838 33.0905 117.948 31.2331 117.914 29.2379L117.835 24.5236C117.755 19.742 112.609 16.7651 108.429 19.0814L104.342 21.3546C102.582 22.3292 100.524 22.4925 98.5862 21.9593C98.5518 21.9478 98.5086 21.9371 98.4742 21.9257C96.5536 21.4039 94.8646 20.2467 93.8383 18.5439L91.4308 14.535C90.201 12.4854 88.101 11.4668 85.9998 11.4668L85.9998 11.4668ZM108.933 51.6001C110.399 51.6001 111.866 52.1589 112.987 53.2798C115.228 55.5215 115.228 59.1454 112.987 61.3871L86.8396 87.5342C85.7617 88.6121 84.3053 89.2139 82.7859 89.2139C81.2666 89.2139 79.8044 88.6121 78.7323 87.5342L64.6677 73.4697C62.426 71.2279 62.426 67.6041 64.6677 65.3624C66.9095 63.1206 70.5333 63.1206 72.775 65.3624L82.786 75.3733L104.879 53.2798C106 52.1589 107.467 51.6001 108.933 51.6001V51.6001ZM44.4219 120.49L31.7683 150.802L53.9961 148.854L68.7998 166.267L81.0727 136.872C76.8014 135.651 73.1049 132.911 70.737 128.955L70.1435 127.97L69.1469 128.53C66.4981 129.998 63.5176 130.769 60.5133 130.769C53.4384 130.769 47.2829 126.538 44.4219 120.49L44.4219 120.49ZM127.578 120.49C124.717 126.538 118.561 130.781 111.486 130.781C108.488 130.781 105.501 130.003 102.853 128.53L101.856 127.97L101.263 128.955C98.8889 132.906 95.187 135.657 90.9157 136.872L103.2 166.267L118.003 148.865L140.231 150.802L127.578 120.49Z"
+                    fill="#603CB6" />
+                </svg>
+              </span>
+              <span>ضمانة <br />100%</span>
+            </div>
+            <div class="d-flex flex-column price-features gap-1 text-center">
+              <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M85.9998 11.4668C57.3331 11.4668 22.9331 34.4001 22.9331 74.5335V97.4668V103.2C22.9331 111.896 26.7412 118.087 30.6261 121.486C32.9948 123.559 33.9863 123.592 35.5756 124.219C37.6587 129.602 50.9749 160.533 85.9998 160.533C86.1951 160.533 86.3767 160.513 86.5709 160.511C86.5858 160.511 86.6007 160.511 86.6157 160.511C99.7471 160.361 110.219 155.54 118.239 149.067H85.9998C55.422 149.067 45.5753 118.586 45.5753 118.586L44.5787 115.596L41.5216 114.835C41.5216 114.835 40.0219 114.481 38.1735 112.864C36.325 111.247 34.3998 108.838 34.3998 103.2V97.4668H40.1331C40.1331 57.3335 97.4664 86.0001 114.666 45.8668C114.666 45.8668 131.866 61.6908 131.866 97.4668V114.667H136.558C134.21 121.358 127.938 126.133 120.4 126.133H96.9401C95.7551 122.801 92.6038 120.4 88.8664 120.4H83.1331C78.3859 120.4 74.5331 124.253 74.5331 129C74.5331 133.747 78.3859 137.6 83.1331 137.6H88.8664C89.3795 137.6 89.8785 137.53 90.3669 137.443C90.8144 137.55 91.2731 137.603 91.7331 137.6H120.4C134.684 137.6 146.582 126.995 148.697 113.278C152.314 111.35 154.8 107.587 154.8 103.2V97.4668C154.8 93.2302 152.481 89.5755 149.066 87.5902V74.5335C149.066 51.6001 137.6 22.9335 114.666 22.9335C114.666 22.9335 108.933 11.4668 85.9997 11.4668L85.9998 11.4668Z"
+                    fill="#603CB6" />
+                </svg>
+              </span>
+              <span>عبر الهاتف <br />100%</span>
+            </div>
+
+            <div class="d-flex flex-column price-features gap-1 text-center">
+              <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M123.267 17.2002C105.849 17.2002 91.7335 31.3157 91.7335 48.7335C91.7335 66.1514 105.849 80.2669 123.267 80.2669C140.685 80.2669 154.8 66.1514 154.8 48.7335C154.8 31.3157 140.685 17.2002 123.267 17.2002V17.2002ZM120.389 28.6669H126.122V33.9411C131.649 34.6692 134.899 37.5593 135.26 42.2835H128.25C127.86 40.4317 126.127 39.2937 123.312 39.2937C120.605 39.2937 118.597 40.5221 118.597 42.3395C118.597 43.7442 119.817 44.6042 122.472 45.2062L127.869 46.3708C133.442 47.5977 135.943 49.9429 135.943 54.2429C135.943 59.2195 132.067 62.6777 126.133 63.5148V68.8002H120.4V63.5484C114.552 62.8375 111.044 59.8868 110.591 55.1052H117.993C118.566 57.0602 120.413 58.1734 123.435 58.1734C126.376 58.1734 128.407 56.9513 128.407 55.1052C128.407 53.7005 127.312 52.8337 124.79 52.2833L119.583 51.1187C114.01 49.8918 111.296 47.236 111.296 42.8099C111.296 38.1315 114.845 34.8175 120.389 33.9747V28.6669ZM45.8668 86.0002C43.672 86.0021 41.4978 86.424 39.4616 87.2432L11.4668 97.4669V143.334L35.6655 132.819C38.5207 131.58 41.7512 131.537 44.635 132.718L96.6046 153.949C96.6046 153.949 96.6268 153.949 96.627 153.949C97.7835 154.506 99.0499 154.797 100.333 154.8C101.818 154.795 103.277 154.405 104.566 153.669C104.567 153.669 104.599 153.669 104.6 153.669L156.121 125.047L156.11 125.036C158.836 123.522 160.528 120.651 160.533 117.534C160.533 112.784 156.683 108.934 151.933 108.934C150.671 108.938 149.424 109.221 148.283 109.762V109.751L108.933 126.134H100.333C105.083 126.134 108.933 122.283 108.933 117.534C108.933 113.811 106.537 110.512 102.999 109.359V109.348L53.1566 87.6127H53.0894C50.8274 86.5575 48.3628 86.0072 45.8668 86.0002L45.8668 86.0002Z"
+                    fill="#603CB6" />
+                </svg>
+              </span>
+              <span>الدفع عند <br />الاستلام </span>
+            </div>
+            <div class="d-flex flex-column price-features gap-1 text-center">
+              <span><svg width="45" height="45" viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_3142_180122)">
+                    <path
+                      d="M11.9668 29.1334C8.80198 29.1334 6.23345 31.7019 6.23345 34.8667C6.23345 38.0315 8.80198 40.6 11.9668 40.6H52.1001C55.2649 40.6 57.8334 43.1685 57.8334 46.3333C57.8334 49.4981 55.2649 52.0667 52.1001 52.0667H11.9668C8.80198 52.0667 6.23345 54.6352 6.23345 57.8C6.23345 60.9648 8.80198 63.5333 11.9668 63.5333H34.9001C38.0649 63.5333 40.6334 66.1019 40.6334 69.2667C40.6334 72.4315 38.0649 75 34.9001 75H11.9668C8.80198 75 6.23345 77.5685 6.23345 80.7333C6.23345 83.8981 8.80198 86.4667 11.9668 86.4667H17.7001C20.8649 86.4667 23.4334 89.0352 23.4334 92.2C23.4334 95.3648 20.8649 97.9333 17.7001 97.9333H11.9668C8.80198 97.9333 6.23345 100.502 6.23345 103.667V120.867C4.1658 120.837 2.24258 121.924 1.20023 123.71C0.157867 125.496 0.157867 127.704 1.20023 129.49C2.24259 131.276 4.16581 132.363 6.23345 132.333H17.7001H23.7246C25.143 141.996 33.4672 149.533 43.5001 149.533C53.5331 149.533 61.8572 141.996 63.2756 132.333H103.7H115.458C116.876 141.996 125.2 149.533 135.233 149.533C145.266 149.533 153.591 141.996 155.009 132.333H166.767C168.834 132.363 170.758 131.276 171.8 129.49C172.842 127.704 172.842 125.496 171.8 123.71C170.758 121.924 168.834 120.837 166.767 120.867V92.2H132.367V69.2666C132.367 66.1018 134.935 63.5333 138.1 63.5333H154.483L152.545 59.0206C150.739 54.8066 146.595 52.0666 142.008 52.0666H103.7V40.6C103.7 34.2646 98.5688 29.1333 92.2334 29.1333L11.9668 29.1334ZM43.5001 120.867C48.3177 120.867 52.1001 124.649 52.1001 129.467C52.1001 134.284 48.3177 138.067 43.5001 138.067C38.6825 138.067 34.9001 134.284 34.9001 129.467C34.9001 124.649 38.6825 120.867 43.5001 120.867ZM135.233 120.867C140.051 120.867 143.833 124.649 143.833 129.467C143.833 134.284 140.051 138.067 135.233 138.067C130.416 138.067 126.633 134.284 126.633 129.467C126.633 124.649 130.416 120.867 135.233 120.867Z"
+                      fill="#603CB6" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_3142_180122">
+                      <rect width="172" height="172" fill="white" transform="translate(0.5 0.466797)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
+              <span>
+                التوصيل المجاني
+                <br />و سريع
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="container mt-5">
-      <div class="product-description p-4 rounded-2">
-        <h3 class="fs-3 dark-blue">وصف المنتج:</h3>
-        <div class="gray mt-4" style="font-size: 15px">
-          <p>
-            هذا الغبار العظمى يعزز العناية بالبشرة الخاصة بك مع زيادة فورية
-            للأنشطة الحيوية القوية. مع أكثر من 90٪ من مسحوق Q10 النقي والطبيعي
-            الطبيعي (مصنوع من خلال التخمير الطبيعي)
-          </p>
-          <p>
-            - سيساعد هذا المضاد للأكسدة الحرجة في الحفاظ على تبحث بشرتك الشباب
-            لفترة أطول، من خلال المساعدة في إنتاج الكولاجين.
-          </p>
-          <ul>
-            <li><p>مزيج مسحوق نقي من المكونات في حالتهم الأكثر فعالية.</p></li>
-            <li><p>صفر حشو - المكونات النشطة فقط.</p></li>
-            <li><p>90٪ مسحوق Q10 كوينزيم.</p></li>
-            <li><p>يضيء الجلد.</p></li>
-            <li><p>يعزز المرونة والكولاجين.</p></li>
-            <li><p>يعزز فعالية المصل الخاص بك.</p></li>
-            <li><p>يحمي الجلد من التعرض البيئي.</p></li>
-          </ul>
-          <p>
-            مزيج خام، مسحوق، تم تصميم هذا المزيج لضمان أن النشطة مستقرة عن الجلد
-            بالكامل. عندما يختلط مع مصل هذا المسحوق سيحمل مضادات الأكسدة أعمق في
-            الأدمة.
-          </p>
-        </div>
+  <section class="container mt-5">
+    <div class="product-description p-4 rounded-2">
+      <h3 class="fs-3 dark-blue">وصف المنتج:</h3>
+      <div class="gray mt-4" style="font-size: 15px">
+        <p>
+          هذا الغبار العظمى يعزز العناية بالبشرة الخاصة بك مع زيادة فورية
+          للأنشطة الحيوية القوية. مع أكثر من 90٪ من مسحوق Q10 النقي والطبيعي
+          الطبيعي (مصنوع من خلال التخمير الطبيعي)
+        </p>
+        <p>
+          - سيساعد هذا المضاد للأكسدة الحرجة في الحفاظ على تبحث بشرتك الشباب
+          لفترة أطول، من خلال المساعدة في إنتاج الكولاجين.
+        </p>
+        <ul>
+          <li>
+            <p>مزيج مسحوق نقي من المكونات في حالتهم الأكثر فعالية.</p>
+          </li>
+          <li>
+            <p>صفر حشو - المكونات النشطة فقط.</p>
+          </li>
+          <li>
+            <p>90٪ مسحوق Q10 كوينزيم.</p>
+          </li>
+          <li>
+            <p>يضيء الجلد.</p>
+          </li>
+          <li>
+            <p>يعزز المرونة والكولاجين.</p>
+          </li>
+          <li>
+            <p>يعزز فعالية المصل الخاص بك.</p>
+          </li>
+          <li>
+            <p>يحمي الجلد من التعرض البيئي.</p>
+          </li>
+        </ul>
+        <p>
+          مزيج خام، مسحوق، تم تصميم هذا المزيج لضمان أن النشطة مستقرة عن الجلد
+          بالكامل. عندما يختلط مع مصل هذا المسحوق سيحمل مضادات الأكسدة أعمق في
+          الأدمة.
+        </p>
       </div>
-    </section>
-    <section  style="padding-top: 80px; background-color: rgba(255,255,255,1);">
+    </div>
+  </section>
+  <section style="padding-top: 80px; background-color: rgba(255, 255, 255, 1)">
     <div class="container mt-5 text-center">
-   <div
-        class="border border-2 rounded-2 text-center p-3 d-flex justify-content-center align-items-center"
-        style="
-          border-color: var(--color-light-blue) !important;
-          background-color: rgba(249, 247, 255, 1);
-        "
-      >
+      <div class="border border-2 rounded-2 text-center p-3 d-flex justify-content-center align-items-center" style="
+            border-color: var(--color-light-blue) !important;
+            background-color: rgba(249, 247, 255, 1);
+          ">
         <p class="mb-0 dark-blue" style="font-size: 18px; font-weight: 500">
           الان متاح في السعوديه 🇸🇦
         </p>
@@ -579,47 +479,46 @@
       </div>
       <div class="mt-3 d-flex justify-content-center align-items-center">
         <div class="col-md-6">
-          <div
-            class="row justify-content-center align-items-center flex-md-nowrap"
-          >
+          <div class="row justify-content-center align-items-center flex-md-nowrap">
             <div class="col-md-3">
               <div
-                class="d-flex align-items-center justify-content-center justify-content-md-start rating-container gap-3"
-              >
+                class="d-flex align-items-center justify-content-center justify-content-md-start rating-container gap-3">
                 <div class="rating-value dark-blue" style="font-size: 15px">
                   4.00
                 </div>
                 <div class="rating-stars d-flex">
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/empty-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
-                  <img
-                    width="20"
-                    height="20"
-                    src="./img/filled-rate.svg"
-                    alt="filled"
-                  />
+                  <div class="rating-stars d-flex">
+                    <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                      <path fill="rgba(193,193,193,1)"
+                        d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                      </path>
+                    </svg>
+                    <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 1024 1024">
+                      <path fill="rgba(255,150,71,1)"
+                        d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                      </path>
+                    </svg>
+                    <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 1024 1024">
+                      <path fill="rgba(255,150,71,1)"
+                        d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                      </path>
+                    </svg>
+                    <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 1024 1024">
+                      <path fill="rgba(255,150,71,1)"
+                        d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                      </path>
+                    </svg>
+                    <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1"
+                      xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 1024 1024">
+                      <path fill="rgba(255,150,71,1)"
+                        d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                      </path>
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -628,9 +527,7 @@
             </div>
             <!-- Rating Details -->
             <div class="col-md-6 text-start">
-              <div
-                class="d-flex align-items-center justify-content-center justify-content-md-start rating-container"
-              >
+              <div class="d-flex align-items-center justify-content-center justify-content-md-start rating-container">
                 <div class="rating-text me-2">تقييم ٥ نجوم من اكثر من</div>
                 <div class="rating-value me-2">9</div>
                 <div class="dark-blue" style="font-size: 16px">مستخدم</div>
@@ -645,188 +542,1354 @@
           المنافسه
         </p>
       </div>
-      <div
-        class="d-flex justify-content-center gap-3 align-content-center flex-wrap flex-md-nowrap"
-      
-      >
-        <div
-          class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
-          style="background-color: rgba(255,150,71,0.07)"
-        >
-          <img
-            src="https://via.placeholder.com/330x240?text=منتج 1"
-            alt="product"
-            class="rounded-2 w-100"
-          />
+      <div class="d-flex justify-content-center gap-3 align-content-center flex-wrap flex-md-nowrap">
+        <div class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
+          style="background-color: rgba(255, 150, 71, 0.07)">
+          <img src="https://via.placeholder.com/330x240?text=منتج 1" alt="product" class="rounded-2 w-100" />
 
           <div class="mt-3">
             <h4 class="dark-blue">مصل لتفتيح البشرة</h4>
             <p class="gray mt-2">
-              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد اللون.
-              تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي يثبت على
-              البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
+              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد
+              اللون. تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي
+              يثبت على البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
             </p>
           </div>
         </div>
-        <div
-          class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
-          style="background-color: rgba(255,150,71,0.07)"
-        >
-          <img
-            src="https://via.placeholder.com/330x240?text=منتج 1"
-            alt="product"
-            class="rounded-2 w-100"
-          />
+        <div class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
+          style="background-color: rgba(255, 150, 71, 0.07)">
+          <img src="https://via.placeholder.com/330x240?text=منتج 1" alt="product" class="rounded-2 w-100" />
 
           <div class="mt-3">
             <h4 class="dark-blue">مصل لتفتيح البشرة</h4>
             <p class="gray mt-2">
-              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد اللون.
-              تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي يثبت على
-              البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
+              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد
+              اللون. تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي
+              يثبت على البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
             </p>
           </div>
         </div>
-        <div
-          class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
-          style="background-color: rgba(255,150,71,0.07)"
-        >
-          <img
-            src="https://via.placeholder.com/330x240?text=منتج 1"
-            alt="product"
-            class="rounded-2 w-100"
-          />
+        <div class="col-md-4 col-sm-6 mb-3 p-4 rounded-2 text-center"
+          style="background-color: rgba(255, 150, 71, 0.07)">
+          <img src="https://via.placeholder.com/330x240?text=منتج 1" alt="product" class="rounded-2 w-100" />
 
           <div class="mt-3">
             <h4 class="dark-blue">مصل لتفتيح البشرة</h4>
             <p class="gray mt-2">
-              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد اللون.
-              تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي يثبت على
-              البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
+              ننتهي بسيروم غني بالمغذيات للحماية والتوازن والإصلاح وتوحيد
+              اللون. تركيبة عالية الفعالية ومرطبة بشكل مكثف مع فيتامين ج الذي
+              يثبت على البشرة ويمنحها بشرة متألقة وناعمة وناعمة.
             </p>
           </div>
         </div>
       </div>
-      <button class="btn btn-lg mt-4  p-3 main-button">
+      <button class="btn btn-lg mt-4 p-2 main-button" style="padding-bottom: 80px">
         إشتري الان - الدفع عند الإستلام
       </button>
     </div>
-     
-    </section>
-    <div style="height: 90vh"></div>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Splide.js JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+  </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        function openBundle(bundleId) {
-          // Close all bundles and remove active class
-          document.querySelectorAll(".bundle").forEach(function (bundle) {
-            const collapseElement = bundle.querySelector(".collapse");
-            if (collapseElement) {
-              collapseElement.classList.remove("show");
-            }
-            bundle.classList.remove("active");
-          });
+  <section class="product-video mt-5">
+    <div class="container text-center">
+      <div>
+        <h2 class="dark-blue">عن المنتج بالفيديو و الصور</h2>
+        <p class="gray">
+          بعض الميزات الرئيسية معروضة بالفيديو و الصور المتحركه
+        </p>
+      </div>
+      <div class="mt-5">
+        <img src="https://via.placeholder.com/700?text=صورة أو فيديوالمنتج" alt="prooduct-gif" width="100%"
+          class="rounded-2 object-fit-cover" style="max-height: 700px;" />
+      </div>
+      <button class="btn btn-lg mt-5 p-2 main-button" style="padding-bottom: 80px">
+        إشتري الان - الدفع عند الإستلام
+      </button>
+      <div class="mt-5 text-center d-flex flex-column justify-content-center align-items-center gap-2">
+        <svg style="width: 20px; height:20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path fill="#603cb6"
+            d="M6 2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1zM14 2h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1z"
+            class="color000000 svgShape" />
+        </svg>
+        <p class="gray" style="max-width: 600px">
+          التنظيف المنتظم للشعر، وذلك لأن غسل الشعر المنتظم يحمي فروة الرأس
+          لتبقى صحية ونظيفة، مع استخدام شامبو مناسب لنوعية شعركِ.
+        </p>
+        <div class="w-25 vertical-line mt-0 pt-0" style="background-color: rgba(227, 232, 232, 1)"></div>
 
-          // Open the selected bundle and add active class
-          const targetBundle = document.querySelector(`#selector${bundleId}`);
-          if (targetBundle) {
-            targetBundle.classList.add("show");
-            targetBundle.closest(".bundle").classList.add("active");
+        <div class="d-flex justify-content-center align-items-center gap-1 mt-2">
+          <img src="https://via.placeholder.com/45x45?text=مستخدم 1" width="55" height="55" alt="user-img"
+            class="object-fit-cover border border-4 rounded-circle"
+            style="border-color: rgba(96, 60, 182, 1) !important" />
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="dark-blue">إليزابيث روز</span>
+            <span class="gray pt-1" style="font-size: 15px">مدريد اسبانيا
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container text-center">
+      <div>
+        <h2 class="dark-blue">حزم التوفير الرائجه</h2>
+        <p class="gray">
+          اشتري اكثر لتوفير اكثر. في الأسفل بعض من حزم المفضله من قبل الزبائن
+        </p>
+      </div>
+      <div class="mt-5 d-flex justify-content-center gap-3 align-content-center flex-wrap flex-md-nowrap">
+        <div class="col-md-4 product-offers-card position-relative rounded-2 p-0 border border-2 pb-3"
+          style="border-color: rgba(227, 232, 232, 1) !important">
+          <img height="214" src="https://via.placeholder.com/370x214?text=عرض 1 " class="rounded-top w-100" alt="" />
+          <span class="position-absolute bg-white p-2 rounded-2" style="top: 8px; right: 8px">Save 40%</span>
+          <div class="text-start d-flex justify-content-start flex-column align-items-center p-3">
+            <div class="rating-stars d-flex my-3 justify-content-start w-100">
+              <div class="rating-stars d-flex">
+                <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                  <path fill="rgba(193,193,193,1)"
+                    d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+              </div>
+              <span class="px-3 pt-0"> (9) </span>
+            </div>
+            <h3 class="title-lg w-100">
+              ثلاثي سوبر تشارج - روتين من 3 خطوات
+            </h3>
+            <p class="gray w-100">
+              روتين من 3 خطوات للبشرة الدهنية والمختلطة
+            </p>
+            <div class="d-flex justify-content-start align-items-center gap-2 w-100">
+              <h3 class="text-2xl dark-blue fw-semibold">$149.00</h3>
+              <h3 class="gray old-price text-decoration-line-through">
+                $130.00
+              </h3>
+            </div>
+            <div class="px-2 w-100">
+              <button class="btn btn-lg mt-4 p-2 main-button w-100" style="background-color: var(--color-light-blue)">
+                شراء الآن
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 product-offers-card active position-relative rounded-2 p-0 border border-2 pb-3">
+          <img height="214" src="https://via.placeholder.com/370x214?text=عرض 1 " class="rounded-top w-100" alt="" />
+          <span class="position-absolute bg-white p-2 rounded-2" style="top: 8px; right: 8px">Save 40%</span>
+          <div class="position-absolute w-100 start-0 text-white" style="top: -2%; font-size: 14px">
+            <span class="p-1 rounded-4 px-3" style="background-color: var(--offers-color)">الاكثر مبيعاً</span>
+          </div>
+          <div class="text-start d-flex justify-content-start flex-column align-items-center p-3">
+            <div class="rating-stars d-flex my-3 justify-content-start w-100">
+              <div class="rating-stars d-flex">
+                <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                  <path fill="rgba(193,193,193,1)"
+                    d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+              </div>
+              <span class="px-3 pt-0"> (9) </span>
+            </div>
+            <h3 class="title-lg w-100">
+              ثلاثي سوبر تشارج - روتين من 3 خطوات
+            </h3>
+            <p class="gray w-100">
+              روتين من 3 خطوات للبشرة الدهنية والمختلطة
+            </p>
+            <div class="d-flex justify-content-start align-items-center gap-2 w-100">
+              <h3 class="text-2xl dark-blue fw-semibold">$149.00</h3>
+              <h3 class="gray old-price text-decoration-line-through">
+                $130.00
+              </h3>
+            </div>
+            <div class="px-2 w-100">
+              <button class="btn btn-lg mt-4 p-2 main-button w-100" style="background-color: var(--color-light-blue)">
+                شراء الآن
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 product-offers-card position-relative rounded-2 p-0 border border-2 pb-3"
+          style="border-color: rgba(227, 232, 232, 1) !important">
+          <img height="214" src="https://via.placeholder.com/370x214?text=عرض 1 " class="rounded-top w-100" alt="" />
+          <span class="position-absolute bg-white p-2 rounded-2" style="top: 8px; right: 8px">Save 40%</span>
+          <div class="text-start d-flex justify-content-start flex-column align-items-center p-3">
+            <div class="rating-stars d-flex my-3 justify-content-start w-100">
+              <div class="rating-stars d-flex">
+                <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                  <path fill="rgba(193,193,193,1)"
+                    d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+                <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  width="15" height="15" viewBox="0 0 1024 1024">
+                  <path fill="rgba(255,150,71,1)"
+                    d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                  </path>
+                </svg>
+              </div>
+              <span class="px-3 pt-0"> (9) </span>
+            </div>
+            <h3 class="title-lg w-100">
+              ثلاثي سوبر تشارج - روتين من 3 خطوات
+            </h3>
+            <p class="gray w-100">
+              روتين من 3 خطوات للبشرة الدهنية والمختلطة
+            </p>
+            <div class="d-flex justify-content-start align-items-center gap-2 w-100">
+              <h3 class="text-2xl dark-blue fw-semibold">$149.00</h3>
+              <h3 class="gray old-price text-decoration-line-through">
+                $130.00
+              </h3>
+            </div>
+            <div class="px-2 w-100">
+              <button class="btn btn-lg mt-4 p-2 main-button w-100" style="background-color: var(--color-light-blue)">
+                شراء الآن
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section container rounded-2 text-center" style="background-color: rgba(249, 247, 255, 1)">
+    <div>
+      <h2 class="dark-blue">لا تكتفي بكلامنا, استمع لتجارب المشترين</h2>
+      <p class="gray">
+        في الاسفل بعض من تجارب زبائننا الذين اعجبهم منتجنا و ارادوا اخبارنا
+        بذلك.
+      </p>
+    </div>
+    <div class="row d-flex justify-content-center align-items-center gap-3 flex-md-nowrap mt-5 mx-auto">
+      <div class="col-md-4 position-relative rounded-2 bg-white p-4">
+        <div class="position-absolute d-flex justify-content-center align-items-center rounded-circle" style="
+              background-color: var(--offers-color);
+              width: 55px;
+              height: 55px;
+              top: -10%;
+            ">
+          <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path fill="#f3f3f3"
+              d="M6 2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1zM14 2h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1z"
+              class="color000000 svgShape" />
+          </svg>
+        </div>
+        <span>
+          <p class="gray mt-4 text-start">
+            التنظيف المنتظم للشعر، وذلك لأن غسل الشعر المنتظم يحمي فروة الرأس
+            لتبقى صحية ونظيفة، مع استخدام شامبو مناسب لنوعية شعركِ.
+          </p>
+        </span>
+        <div class="vertical-line"></div>
+        <div class="d-flex justify-content-start align-items-center gap-1 mt-2 p-2">
+          <img src="https://via.placeholder.com/45x45?text=مستخدم 1" width="55" height="55" alt="user-img"
+            class="object-fit-cover rounded-circle" />
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="dark-blue">إليزابيث روز</span>
+            <span class="gray pt-1" style="font-size: 15px">مدريد اسبانيا
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 position-relative rounded-2 bg-white p-4">
+        <div class="position-absolute d-flex justify-content-center align-items-center rounded-circle" style="
+              background-color: var(--offers-color);
+              width: 55px;
+              height: 55px;
+              top: -10%;
+            ">
+          <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path fill="#f3f3f3"
+              d="M6 2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1zM14 2h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1z"
+              class="color000000 svgShape" />
+          </svg>
+        </div>
+        <span>
+          <p class="gray mt-4 text-start">
+            التنظيف المنتظم للشعر، وذلك لأن غسل الشعر المنتظم يحمي فروة الرأس
+            لتبقى صحية ونظيفة، مع استخدام شامبو مناسب لنوعية شعركِ.
+          </p>
+        </span>
+        <div class="vertical-line"></div>
+        <div class="d-flex justify-content-start align-items-center gap-1 mt-2 p-2">
+          <img src="https://via.placeholder.com/45x45?text=مستخدم 1" width="55" height="55" alt="user-img"
+            class="object-fit-cover rounded-circle" />
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="dark-blue">إليزابيث روز</span>
+            <span class="gray pt-1" style="font-size: 15px">مدريد اسبانيا
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 position-relative rounded-2 bg-white p-4">
+        <div class="position-absolute d-flex justify-content-center align-items-center rounded-circle" style="
+              background-color: var(--offers-color);
+              width: 55px;
+              height: 55px;
+              top: -10%;
+            ">
+          <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path fill="#f3f3f3"
+              d="M6 2H2a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1zM14 2h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3c0 2.206-1.794 4-4 4v2c3.309 0 6-2.691 6-6V3a1 1 0 0 0-1-1z"
+              class="color000000 svgShape" />
+          </svg>
+        </div>
+        <span>
+          <p class="gray mt-4 text-start">
+            التنظيف المنتظم للشعر، وذلك لأن غسل الشعر المنتظم يحمي فروة الرأس
+            لتبقى صحية ونظيفة، مع استخدام شامبو مناسب لنوعية شعركِ.
+          </p>
+        </span>
+        <div class="vertical-line"></div>
+        <div class="d-flex justify-content-start align-items-center gap-1 mt-2 p-2">
+          <img src="https://via.placeholder.com/45x45?text=مستخدم 1" width="55" height="55" alt="user-img"
+            class="object-fit-cover rounded-circle" />
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <span class="dark-blue">إليزابيث روز</span>
+            <span class="gray pt-1" style="font-size: 15px">مدريد اسبانيا
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center">
+      <button class="btn btn-lg mt-5 p-2 main-button sec-btn" style="padding-bottom: 80px">
+        إشتري الان - الدفع عند الإستلام
+      </button>
+    </div>
+  </div>
+  <section class="section container text-center">
+    <h2 class="dark-blue">مراجعات المشترين</h2>
+    <div class="w-100 d-flex justify-content-start align-items-center">
+      <button class="mt-4 btn px-3 py-2 add-review">إضافة مراجعة</button>
+    </div>
+
+    <div class="row g-2 mt-4">
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="col-md-3 p-1">
+        <div class="rounded-2 p-3" style="background-color: rgba(255, 150, 71, 0.07)">
+          <div class="d-flex justify-content-between align-items-center w-100">
+            <div class="d-flex justify-content-start align-items-center gap-2">
+              <img class="rounded-circle" width="45" height="45" src="https://via.placeholder.com/45x45?text=مستخدم 1"
+                alt="product" />
+              <h6 class="mb-0 dark-blue" style="font-size: 16px">Henriha</h6>
+            </div>
+
+            <div class="d-flex flex-column text-end justify-content-start align-items-center w-100">
+              <div class="rating-stars d-flex justify-content-end w-100">
+                <div class="rating-stars d-flex">
+                  <svg style="width: 20px; height: 20px;" class="EGtBw empty" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+                    <path fill="rgba(193,193,193,1)"
+                      d="M512.004 140.785l90.56 177.446c13.018 25.511 37.449 43.261 65.732 47.759l196.745 31.291-140.774 140.958c-20.241 20.267-29.572 48.986-25.109 77.278l31.036 196.783-177.562-90.33c-25.527-12.983-55.723-12.983-81.25 0l-177.565 90.33 31.039-196.783c4.462-28.292-4.87-57.011-25.108-77.278l-140.778-140.958 196.745-31.291c28.285-4.498 52.716-22.248 65.735-47.759l90.555-177.446zM534.81 44.672c-9.502-18.618-36.105-18.618-45.606 0l-124.76 244.468c-3.72 7.289-10.7 12.36-18.781 13.645l-271.056 43.11c-20.643 3.283-28.863 28.583-14.093 43.372l193.95 194.199c5.783 5.79 8.449 13.995 7.174 22.080l-42.761 271.108c-3.257 20.646 18.265 36.284 36.895 26.807l244.629-124.446c7.292-3.712 15.919-3.712 23.215 0l244.629 124.446c18.628 9.476 40.149-6.161 36.894-26.807l-42.761-271.108c-1.276-8.085 1.391-16.29 7.172-22.080l193.95-194.199c14.771-14.79 6.549-40.090-14.093-43.372l-271.057-43.11c-8.081-1.285-15.061-6.356-18.782-13.645l-124.757-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                  <svg style="width: 20px; height: 20px;" class="EGtBw" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    width="15" height="15" viewBox="0 0 1024 1024">
+                    <path fill="rgba(255,150,71,1)"
+                      d="M489.203 44.672c9.502-18.618 36.105-18.618 45.606 0l124.757 244.468c3.721 7.289 10.701 12.36 18.782 13.645l271.057 43.11c20.642 3.283 28.864 28.583 14.093 43.372l-193.95 194.199c-5.781 5.79-8.448 13.995-7.172 22.080l42.761 271.108c3.255 20.646-18.266 36.284-36.894 26.807l-244.629-124.446c-7.296-3.712-15.923-3.712-23.215 0l-244.629 124.446c-18.63 9.476-40.151-6.161-36.895-26.807l42.761-271.108c1.275-8.085-1.391-16.29-7.174-22.080l-193.95-194.199c-14.77-14.789-6.55-40.090 14.093-43.372l271.056-43.11c8.081-1.285 15.061-6.356 18.781-13.645l124.76-244.468z">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <p class="gray mb-0 w-100" style="font-size: 14px">
+                منذ ٣ أعوام
+              </p>
+            </div>
+          </div>
+          <div class="vertical-line"></div>
+          <p class="gray text-start mt-2">
+            I like the way this product makes my skin feel however it does not
+            work as shown in videos
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 d-flex justify-content-center align-items-center">
+      <button class="mt-4 btn px-3 py-2 add-review">عرض المزيد</button>
+    </div>
+  </section>
+
+  <section class="section common-questions">
+    <div class="container">
+      <h4 class="dark-blue mb-3">بعض الأسئلة الشائعه و اجاباتها</h4>
+      <div class="col-md-6">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingOne">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                aria-controls="collapseOne">
+                <div class="w-100 dark-blue fw-semibold">
+                  متى سوف يشحن طلبي؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show p-4" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  تتم معالجة الطلبات وشحنها عادة في غضون 3 أيام عمل من تاريخ
+                  الشراء.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingTwo">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
+                aria-controls="collapseTwo">
+                <div class="w-100 dark-blue fw-semibold">
+                  كم تستغرق عملية الشحن من الوقت؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse p-4" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  تختلف أوقات الشحن نظرًا لأننا نشحن إلى جميع أنحاء العالم من
+                  مراكز الشحن المختلفة بناءً على موقعك. متوسط مذة الشحن بين 7
+                  و 20 يوم عمل. سيتم تحديث رقم التتبع الخاص بك بعد 3/7 أيام من
+                  شحن طلبك.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingThree">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true"
+                aria-controls="collapseThree">
+                <div class="w-100 dark-blue fw-semibold">
+                  كيف يمكنني إلغاء طلب؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse p-4" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  نحن قادرون فقط على إلغاء الطلبات في غضون الـ 12 ساعة الأولى
+                  بعد تقديم الطلب. وبعد ذلك تمت معالجة الطلب على الأرجح
+                  والاستعداد للشحن.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingFour">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true"
+                aria-controls="collapseFour">
+                <div class="w-100 dark-blue fw-semibold">
+                  ماهي سياسة الخصوصية؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse p-4" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  نحن نحترم خصوصيتك ونتعهد بحماية بياناتك الشخصية. سيتم
+                  استخدام بياناتك فقط لتحسين تجربتك معنا أو لتزويدك بخدماتنا.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingFive">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true"
+                aria-controls="collapseFive">
+                <div class="w-100 dark-blue fw-semibold">
+                  كيف يمكنني تتبع طلبي؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse p-4" aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  بمجرد معالجة طلبك، سيتم إرسال بريد إلكتروني يحتوي على
+                  معلومات تتبع الطلب. يمكنك استخدام هذه المعلومات لمتابعة حالة
+                  الشحنة الخاصة بك.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item rounded-2 mb-2">
+            <h2 class="accordion-header rounded-2 w-100" id="headingSix">
+              <button class="accordion-button w-100 d-flex flex-nowrap justify-content-between align-items-center"
+                type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true"
+                aria-controls="collapseSix">
+                <div class="w-100 dark-blue fw-semibold">
+                  كيف يمكنني إلغاء أو تعديل طلبي؟
+                </div>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse p-4" aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p class="gray">
+                  إذا كنت بحاجة إلى إلغاء أو تعديل طلبك، يرجى الاتصال بخدمة
+                  العملاء في أسرع وقت ممكن. بمجرد شحن الطلب، قد لا يكون من
+                  الممكن إجراء تعديلات.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container text-center">
+      <div>
+        <h2 class="dark-blue">ضمان لمدة 30 يوم</h2>
+        <p class="gray">
+          إمكانية استبدال المنتج في حالة العطب هذا ضماننا وارضاء الزبون هدفنا!
+        </p>
+      </div>
+      <div class="w-100 d-flex justify-content-center align-items-center">
+        <div class="mt-4 d-flex justify-content-between gap-4 flex-row-reverse align-items-center" style="width: 500px">
+          <div class="d-flex flex-column price-features gap-1 text-center">
+            <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M85.9998 11.4668C83.8985 11.4668 81.7986 12.4854 80.5688 14.535L78.1836 18.5327C77.1516 20.2527 75.4462 21.4094 73.5141 21.9369C73.4912 21.9426 73.4698 21.9535 73.4469 21.9593C71.4918 22.4982 69.418 22.3407 67.6464 21.3546L63.5815 19.0926C59.4019 16.7706 54.2556 19.7362 54.1753 24.5236L54.0857 29.2491C54.0513 31.2443 53.1669 33.096 51.7565 34.5121C51.7393 34.5236 51.7232 34.5397 51.7118 34.5569C50.3014 35.973 48.4439 36.8517 46.4487 36.8861L41.7232 36.9645C36.9416 37.0447 33.9702 42.1966 36.2922 46.3819L38.5654 50.4691C39.5401 52.2293 39.7033 54.287 39.1701 56.2249C39.1529 56.2593 39.148 56.2913 39.1365 56.3257C38.6148 58.2463 37.4575 59.9353 35.7547 60.9616L31.7459 63.3691C27.6466 65.8287 27.6466 71.7715 31.7459 74.2311L35.7547 76.6387C37.4633 77.6649 38.6148 79.3539 39.1365 81.2746C39.148 81.309 39.1474 81.3465 39.1589 81.3866C39.6921 83.3245 39.5401 85.3879 38.5654 87.1423L36.2922 91.2296C33.9702 95.4092 36.9359 100.556 41.7232 100.636L46.4487 100.714C48.4497 100.749 50.3014 101.644 51.7118 103.055L51.7566 103.099C53.1727 104.51 54.0513 106.367 54.0857 108.362L54.1641 113.077C54.2444 117.858 59.402 120.835 63.5816 118.519L67.6688 116.246C69.4289 115.271 71.4867 115.108 73.4245 115.641C73.4589 115.652 73.4909 115.663 73.5253 115.675C75.446 116.196 77.135 117.348 78.1612 119.056L80.5688 123.065C83.0284 127.165 88.9712 127.165 91.4308 123.065L93.8383 119.056C94.8646 117.348 96.5536 116.196 98.4742 115.675C98.5086 115.663 98.5518 115.652 98.5862 115.641C100.524 115.108 102.588 115.271 104.342 116.246L108.429 118.519C112.609 120.841 117.755 117.864 117.835 113.077L117.914 108.362C117.948 106.361 118.844 104.51 120.254 103.099L120.299 103.055C121.709 101.638 123.567 100.749 125.562 100.714L130.276 100.636C135.058 100.556 138.035 95.4092 135.719 91.2296L133.445 87.1423C132.471 85.3822 132.307 83.3245 132.841 81.3866C132.852 81.3522 132.863 81.309 132.874 81.2746C133.396 79.3539 134.547 77.6649 136.256 76.6387L140.265 74.2311C144.364 71.7658 144.364 65.8345 140.265 63.3691L136.256 60.9616C134.547 59.9353 133.396 58.2463 132.874 56.3257C132.863 56.2913 132.852 56.2481 132.841 56.2137C132.307 54.2758 132.471 52.2123 133.445 50.4579L135.719 46.3707C138.041 42.1911 135.064 37.0447 130.276 36.9645L125.562 36.8861C123.561 36.8517 121.709 35.9561 120.299 34.5457L120.254 34.5009C118.838 33.0905 117.948 31.2331 117.914 29.2379L117.835 24.5236C117.755 19.742 112.609 16.7651 108.429 19.0814L104.342 21.3546C102.582 22.3292 100.524 22.4925 98.5862 21.9593C98.5518 21.9478 98.5086 21.9371 98.4742 21.9257C96.5536 21.4039 94.8646 20.2467 93.8383 18.5439L91.4308 14.535C90.201 12.4854 88.101 11.4668 85.9998 11.4668L85.9998 11.4668ZM108.933 51.6001C110.399 51.6001 111.866 52.1589 112.987 53.2798C115.228 55.5215 115.228 59.1454 112.987 61.3871L86.8396 87.5342C85.7617 88.6121 84.3053 89.2139 82.7859 89.2139C81.2666 89.2139 79.8044 88.6121 78.7323 87.5342L64.6677 73.4697C62.426 71.2279 62.426 67.6041 64.6677 65.3624C66.9095 63.1206 70.5333 63.1206 72.775 65.3624L82.786 75.3733L104.879 53.2798C106 52.1589 107.467 51.6001 108.933 51.6001V51.6001ZM44.4219 120.49L31.7683 150.802L53.9961 148.854L68.7998 166.267L81.0727 136.872C76.8014 135.651 73.1049 132.911 70.737 128.955L70.1435 127.97L69.1469 128.53C66.4981 129.998 63.5176 130.769 60.5133 130.769C53.4384 130.769 47.2829 126.538 44.4219 120.49L44.4219 120.49ZM127.578 120.49C124.717 126.538 118.561 130.781 111.486 130.781C108.488 130.781 105.501 130.003 102.853 128.53L101.856 127.97L101.263 128.955C98.8889 132.906 95.187 135.657 90.9157 136.872L103.2 166.267L118.003 148.865L140.231 150.802L127.578 120.49Z"
+                  fill="#603CB6" />
+              </svg>
+            </span>
+            <span>ضمانة <br />100%</span>
+          </div>
+          <div class="d-flex flex-column price-features gap-1 text-center">
+            <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M85.9998 11.4668C57.3331 11.4668 22.9331 34.4001 22.9331 74.5335V97.4668V103.2C22.9331 111.896 26.7412 118.087 30.6261 121.486C32.9948 123.559 33.9863 123.592 35.5756 124.219C37.6587 129.602 50.9749 160.533 85.9998 160.533C86.1951 160.533 86.3767 160.513 86.5709 160.511C86.5858 160.511 86.6007 160.511 86.6157 160.511C99.7471 160.361 110.219 155.54 118.239 149.067H85.9998C55.422 149.067 45.5753 118.586 45.5753 118.586L44.5787 115.596L41.5216 114.835C41.5216 114.835 40.0219 114.481 38.1735 112.864C36.325 111.247 34.3998 108.838 34.3998 103.2V97.4668H40.1331C40.1331 57.3335 97.4664 86.0001 114.666 45.8668C114.666 45.8668 131.866 61.6908 131.866 97.4668V114.667H136.558C134.21 121.358 127.938 126.133 120.4 126.133H96.9401C95.7551 122.801 92.6038 120.4 88.8664 120.4H83.1331C78.3859 120.4 74.5331 124.253 74.5331 129C74.5331 133.747 78.3859 137.6 83.1331 137.6H88.8664C89.3795 137.6 89.8785 137.53 90.3669 137.443C90.8144 137.55 91.2731 137.603 91.7331 137.6H120.4C134.684 137.6 146.582 126.995 148.697 113.278C152.314 111.35 154.8 107.587 154.8 103.2V97.4668C154.8 93.2302 152.481 89.5755 149.066 87.5902V74.5335C149.066 51.6001 137.6 22.9335 114.666 22.9335C114.666 22.9335 108.933 11.4668 85.9997 11.4668L85.9998 11.4668Z"
+                  fill="#603CB6" />
+              </svg>
+            </span>
+            <span>عبر الهاتف <br />100%</span>
+          </div>
+
+          <div class="d-flex flex-column price-features gap-1 text-center">
+            <span><svg width="45" height="45" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M123.267 17.2002C105.849 17.2002 91.7335 31.3157 91.7335 48.7335C91.7335 66.1514 105.849 80.2669 123.267 80.2669C140.685 80.2669 154.8 66.1514 154.8 48.7335C154.8 31.3157 140.685 17.2002 123.267 17.2002V17.2002ZM120.389 28.6669H126.122V33.9411C131.649 34.6692 134.899 37.5593 135.26 42.2835H128.25C127.86 40.4317 126.127 39.2937 123.312 39.2937C120.605 39.2937 118.597 40.5221 118.597 42.3395C118.597 43.7442 119.817 44.6042 122.472 45.2062L127.869 46.3708C133.442 47.5977 135.943 49.9429 135.943 54.2429C135.943 59.2195 132.067 62.6777 126.133 63.5148V68.8002H120.4V63.5484C114.552 62.8375 111.044 59.8868 110.591 55.1052H117.993C118.566 57.0602 120.413 58.1734 123.435 58.1734C126.376 58.1734 128.407 56.9513 128.407 55.1052C128.407 53.7005 127.312 52.8337 124.79 52.2833L119.583 51.1187C114.01 49.8918 111.296 47.236 111.296 42.8099C111.296 38.1315 114.845 34.8175 120.389 33.9747V28.6669ZM45.8668 86.0002C43.672 86.0021 41.4978 86.424 39.4616 87.2432L11.4668 97.4669V143.334L35.6655 132.819C38.5207 131.58 41.7512 131.537 44.635 132.718L96.6046 153.949C96.6046 153.949 96.6268 153.949 96.627 153.949C97.7835 154.506 99.0499 154.797 100.333 154.8C101.818 154.795 103.277 154.405 104.566 153.669C104.567 153.669 104.599 153.669 104.6 153.669L156.121 125.047L156.11 125.036C158.836 123.522 160.528 120.651 160.533 117.534C160.533 112.784 156.683 108.934 151.933 108.934C150.671 108.938 149.424 109.221 148.283 109.762V109.751L108.933 126.134H100.333C105.083 126.134 108.933 122.283 108.933 117.534C108.933 113.811 106.537 110.512 102.999 109.359V109.348L53.1566 87.6127H53.0894C50.8274 86.5575 48.3628 86.0072 45.8668 86.0002L45.8668 86.0002Z"
+                  fill="#603CB6" />
+              </svg>
+            </span>
+            <span>الدفع عند <br />الاستلام </span>
+          </div>
+          <div class="d-flex flex-column price-features gap-1 text-center">
+            <span><svg width="45" height="45" viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3142_180122)">
+                  <path
+                    d="M11.9668 29.1334C8.80198 29.1334 6.23345 31.7019 6.23345 34.8667C6.23345 38.0315 8.80198 40.6 11.9668 40.6H52.1001C55.2649 40.6 57.8334 43.1685 57.8334 46.3333C57.8334 49.4981 55.2649 52.0667 52.1001 52.0667H11.9668C8.80198 52.0667 6.23345 54.6352 6.23345 57.8C6.23345 60.9648 8.80198 63.5333 11.9668 63.5333H34.9001C38.0649 63.5333 40.6334 66.1019 40.6334 69.2667C40.6334 72.4315 38.0649 75 34.9001 75H11.9668C8.80198 75 6.23345 77.5685 6.23345 80.7333C6.23345 83.8981 8.80198 86.4667 11.9668 86.4667H17.7001C20.8649 86.4667 23.4334 89.0352 23.4334 92.2C23.4334 95.3648 20.8649 97.9333 17.7001 97.9333H11.9668C8.80198 97.9333 6.23345 100.502 6.23345 103.667V120.867C4.1658 120.837 2.24258 121.924 1.20023 123.71C0.157867 125.496 0.157867 127.704 1.20023 129.49C2.24259 131.276 4.16581 132.363 6.23345 132.333H17.7001H23.7246C25.143 141.996 33.4672 149.533 43.5001 149.533C53.5331 149.533 61.8572 141.996 63.2756 132.333H103.7H115.458C116.876 141.996 125.2 149.533 135.233 149.533C145.266 149.533 153.591 141.996 155.009 132.333H166.767C168.834 132.363 170.758 131.276 171.8 129.49C172.842 127.704 172.842 125.496 171.8 123.71C170.758 121.924 168.834 120.837 166.767 120.867V92.2H132.367V69.2666C132.367 66.1018 134.935 63.5333 138.1 63.5333H154.483L152.545 59.0206C150.739 54.8066 146.595 52.0666 142.008 52.0666H103.7V40.6C103.7 34.2646 98.5688 29.1333 92.2334 29.1333L11.9668 29.1334ZM43.5001 120.867C48.3177 120.867 52.1001 124.649 52.1001 129.467C52.1001 134.284 48.3177 138.067 43.5001 138.067C38.6825 138.067 34.9001 134.284 34.9001 129.467C34.9001 124.649 38.6825 120.867 43.5001 120.867ZM135.233 120.867C140.051 120.867 143.833 124.649 143.833 129.467C143.833 134.284 140.051 138.067 135.233 138.067C130.416 138.067 126.633 134.284 126.633 129.467C126.633 124.649 130.416 120.867 135.233 120.867Z"
+                    fill="#603CB6" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3142_180122">
+                    <rect width="172" height="172" fill="white" transform="translate(0.5 0.466797)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span>
+              التوصيل المجاني
+              <br />و سريع
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4 p-4 border border-2 rounded-2 d-flex justify-content-center align-items-center flex-column gap-2"
+        style="
+            background-color: rgba(249, 247, 255, 1);
+            border-color: var(--color-light-blue) !important;
+          ">
+        <h4 class="dark-blue fw-bold">العرض محدود لمده محدوده</h4>
+        <p class="gray">استغل العرض و اشتري الآن.</p>
+        <button class="btn btn-lg mt-4 p-3 limit-offer-time-btn">
+          إشتري الان - الدفع عند الإستلام
+        </button>
+        <div class="mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="243" height="24" viewBox="0 0 243 24" fill="none">
+            <path opacity="0.07"
+              d="M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z"
+              fill="black" />
+            <path d="M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z"
+              fill="#006FCF" />
+            <path
+              d="M8.971 10.268L9.745 12.144H8.203L8.971 10.268ZM25.046 10.346H22.069V11.173H24.998V12.412H22.075V13.334H25.052V14.073L27.129 11.828L25.052 9.488L25.046 10.346ZM10.983 8.006H14.978L15.865 9.941L16.687 8H27.057L28.135 9.19L29.25 8H34.013L30.494 11.852L33.977 15.68H29.143L28.065 14.49L26.94 15.68H10.03L9.536 14.49H8.406L7.911 15.68H4L7.286 8H10.716L10.983 8.006ZM19.646 9.084H17.407L15.907 12.62L14.282 9.084H12.06V13.894L10 9.084H8.007L5.625 14.596H7.18L7.674 13.406H10.27L10.764 14.596H13.484V10.661L15.235 14.602H16.425L18.165 10.673V14.603H19.623L19.647 9.083L19.646 9.084ZM28.986 11.852L31.517 9.084H29.695L28.094 10.81L26.546 9.084H20.652V14.602H26.462L28.076 12.864L29.624 14.602H31.499L28.987 11.852H28.986Z"
+              fill="white" />
+            <path opacity="0.07"
+              d="M76 0H44C42.3 0 41 1.3 41 3V21C41 22.7 42.4 24 44 24H76C77.7 24 79 22.7 79 21V3C79 1.3 77.6 0 76 0Z"
+              fill="black" />
+            <path
+              d="M76 1C77.1 1 78 1.9 78 3V21C78 22.1 77.1 23 76 23H44C42.9 23 42 22.1 42 21V3C42 1.9 42.9 1 44 1H76Z"
+              fill="white" />
+            <path
+              d="M53.0005 12V15.7C53.0005 16 52.8005 16 52.5005 15.9C50.6005 15.1 49.5005 12.6 50.2005 10.5C50.6005 9.4 51.4005 8.5 52.5005 8.1C52.9005 7.9 53.0005 8 53.0005 8.3V12ZM55.0005 12V8.3C55.0005 8 55.0005 8 55.3005 8.1C57.4005 8.9 58.5005 11.4 57.7005 13.5C57.3005 14.6 56.5005 15.5 55.4005 15.9C55.0005 16.1 55.0005 16 55.0005 15.7V12V12ZM62.2005 5H54.0005C57.8005 5 60.8005 8.1 60.8005 12C60.8005 15.9 57.8005 19 54.0005 19H62.2005C66.0005 19 69.0005 15.9 69.0005 12C69.0005 8.1 66.0005 5 62.2005 5Z"
+              fill="#3086C8" />
+            <path opacity="0.07"
+              d="M117 0H85C83.3 0 82 1.3 82 3V21C82 22.7 83.4 24 85 24H117C118.7 24 120 22.7 120 21V3C120 1.3 118.6 0 117 0Z"
+              fill="black" />
+            <path
+              d="M117 1C118.1 1 119 1.9 119 3V21C119 22.1 118.1 23 117 23H85C83.9 23 83 22.1 83 21V3C83 1.9 83.9 1 85 1H117Z"
+              fill="white" />
+            <path
+              d="M110.3 10.1H110C109.6 11.1 109.3 11.6 109 13.1H110.9C110.6 11.6 110.6 10.9 110.3 10.1V10.1ZM113.2 16H111.5C111.4 16 111.4 16 111.3 15.9L111.1 15L111 14.8H108.6C108.5 14.8 108.4 14.8 108.4 15L108.1 15.9C108.1 16 108 16 108 16H105.9L106.1 15.5L109 8.7C109 8.2 109.3 8 109.8 8H111.3C111.4 8 111.5 8 111.5 8.2L112.9 14.7C113 15.1 113.1 15.4 113.1 15.8C113.2 15.9 113.2 15.9 113.2 16V16ZM99.8 15.7L100.2 13.9C100.3 13.9 100.4 14 100.4 14C101.1 14.3 101.8 14.5 102.5 14.4C102.7 14.4 103 14.3 103.2 14.2C103.7 14 103.7 13.5 103.3 13.1C103.1 12.9 102.8 12.8 102.5 12.6C102.1 12.4 101.7 12.2 101.4 11.9C100.2 10.9 100.6 9.5 101.3 8.8C101.9 8.4 102.2 8 103 8C104.2 8 105.5 8 106.1 8.2H106.2C106.1 8.8 106 9.3 105.8 9.9C105.3 9.7 104.8 9.5 104.3 9.5C104 9.5 103.7 9.5 103.4 9.6C103.2 9.6 103.1 9.7 103 9.8C102.8 10 102.8 10.3 103 10.5L103.5 10.9C103.9 11.1 104.3 11.3 104.6 11.5C105.1 11.8 105.6 12.3 105.7 12.9C105.9 13.8 105.6 14.6 104.8 15.2C104.3 15.6 104.1 15.8 103.4 15.8C102 15.8 100.9 15.9 100 15.6C99.9 15.8 99.9 15.8 99.8 15.7V15.7ZM96.3 16C96.4 15.3 96.4 15.3 96.5 15C97 12.8 97.5 10.5 97.9 8.3C98 8.1 98 8 98.2 8H100C99.8 9.2 99.6 10.1 99.3 11.2C99 12.7 98.7 14.2 98.3 15.7C98.3 15.9 98.2 15.9 98 15.9L96.3 16ZM87 8.2C87 8.1 87.2 8 87.3 8H90.7C91.2 8 91.6 8.3 91.7 8.8L92.6 13.2C92.6 13.3 92.6 13.3 92.7 13.4C92.7 13.3 92.8 13.3 92.8 13.3L94.9 8.2C94.8 8.1 94.9 8 95 8H97.1C97.1 8.1 97.1 8.1 97 8.2L93.9 15.5C93.8 15.7 93.8 15.8 93.7 15.9C93.6 16 93.4 15.9 93.2 15.9H91.7C91.6 15.9 91.5 15.9 91.5 15.7L89.9 9.5C89.7 9.3 89.4 9 89 8.9C88.4 8.6 87.3 8.4 87.1 8.4L87 8.2Z"
+              fill="#142688" />
+            <path opacity="0.07"
+              d="M158 0H126C124.3 0 123 1.3 123 3V21C123 22.7 124.4 24 126 24H158C159.7 24 161 22.7 161 21V3C161 1.3 159.6 0 158 0Z"
+              fill="black" />
+            <path
+              d="M158 1C159.1 1 160 1.9 160 3V21C160 22.1 159.1 23 158 23H126C124.9 23 124 22.1 124 21V3C124 1.9 124.9 1 126 1H158Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M134.5 5H138V16.5C138 17.163 137.737 17.7989 137.268 18.2678C136.799 18.7366 136.163 19 135.5 19H132V7.5C132 6.83696 132.263 6.20107 132.732 5.73223C133.201 5.26339 133.837 5 134.5 5Z"
+              fill="#006EBC" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M141.5 5H145V16.5C145 17.163 144.737 17.7989 144.268 18.2678C143.799 18.7366 143.163 19 142.5 19H139V7.5C139 6.83696 139.263 6.20107 139.732 5.73223C140.201 5.26339 140.837 5 141.5 5Z"
+              fill="#F00036" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M148.5 5H152V16.5C152 17.163 151.737 17.7989 151.268 18.2678C150.799 18.7366 150.163 19 149.5 19H146V7.5C146 6.83696 146.263 6.20107 146.732 5.73223C147.201 5.26339 147.837 5 148.5 5V5Z"
+              fill="#2AB419" />
+            <path
+              d="M133.755 14.5C132.695 14.5 131.633 14.196 131.099 13.513L131.879 12.837C131.947 13.97 135.424 14.077 135.424 12.647V9.50003H137.226V12.647C137.226 13.375 136.652 13.969 135.653 14.279C135.187 14.423 134.288 14.5 133.755 14.5V14.5ZM141.871 14.5C141.197 14.5 140.483 14.393 139.906 14.134C138.958 13.709 138.594 12.928 138.606 11.935C138.618 10.921 139.042 10.153 140.074 9.77003C141.393 9.28003 143.417 9.50903 144 10.04V11.012C143.428 10.491 142.042 10.114 141.081 10.552C140.587 10.778 140.344 11.469 140.337 12C140.331 12.56 140.582 13.252 141.081 13.497C142.034 13.964 143.471 13.537 144 13.056V14.066C143.642 14.321 142.747 14.5 141.871 14.5V14.5ZM150.55 11.913C150.92 11.678 151.132 11.346 151.132 10.908C151.132 10.47 151.016 10.221 150.784 9.96903C150.578 9.76203 150.204 9.50003 149.546 9.50003H146V14.5H149.546C150.242 14.5 150.643 14.27 150.861 14.085C151.144 13.835 151.287 13.555 151.287 13.125C151.287 12.694 151.132 12.217 150.55 11.913V11.913ZM148.644 11.632H147.216V10.188H148.711C149.667 10.188 149.655 11.632 148.644 11.632V11.632ZM148.932 13.789H147.216V12.276H148.932C149.918 12.276 150.015 13.789 148.932 13.789Z"
+              fill="white" />
+            <path opacity="0.07"
+              d="M199 0H167C165.3 0 164 1.3 164 3V21C164 22.7 165.4 24 167 24H199C200.7 24 202 22.7 202 21V3C202 1.3 200.6 0 199 0Z"
+              fill="black" />
+            <path
+              d="M199 1C200.1 1 201 1.9 201 3V21C201 22.1 200.1 23 199 23H167C165.9 23 165 22.1 165 21V3C165 1.9 165.9 1 167 1H199Z"
+              fill="white" />
+            <path
+              d="M179 19C182.866 19 186 15.866 186 12C186 8.13401 182.866 5 179 5C175.134 5 172 8.13401 172 12C172 15.866 175.134 19 179 19Z"
+              fill="#EB001B" />
+            <path
+              d="M187 19C190.866 19 194 15.866 194 12C194 8.13401 190.866 5 187 5C183.134 5 180 8.13401 180 12C180 15.866 183.134 19 187 19Z"
+              fill="#F79E1B" />
+            <path
+              d="M186 12C186 9.60005 184.8 7.50005 183 6.30005C181.2 7.60005 180 9.70005 180 12C180 14.3 181.2 16.5 183 17.7C184.8 16.5 186 14.4 186 12Z"
+              fill="#FF5F00" />
+            <path opacity="0.07"
+              d="M240 0H208C206.3 0 205 1.3 205 3V21C205 22.7 206.4 24 208 24H240C241.7 24 243 22.7 243 21V3C243 1.3 241.6 0 240 0Z"
+              fill="black" />
+            <path
+              d="M240 1C241.1 1 242 1.9 242 3V21C242 22.1 241.1 23 240 23H208C206.9 23 206 22.1 206 21V3C206 1.9 206.9 1 208 1H240Z"
+              fill="white" />
+            <path d="M242 16.95V21C242 22.1 241.1 23 240 23H228.228C236.124 21.185 240.271 18.399 242 16.95Z"
+              fill="#EDA024" />
+            <path d="M214 11H234V13H214V11Z" fill="#494949" />
+            <path
+              d="M227 12C227 13.7 225.7 15 224 15C222.3 15 221 13.6 221 12C221 10.4 222.4 9 224 9C225.7 9 227 10.3 227 12Z"
+              fill="#EDA024" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="w-100 vertical-line"></div>
+      <div style="max-width: 600px" class="mx-auto mt-3 d-flex justify-content-center align-items-center flex-column">
+        <h3 style="margin-top: 60px" class="dark-blue text-center fs-2">
+          .COD<b>ELIVERY</b>
+        </h3>
+        <div class="w-100 mt-4 d-flex justify-content-between align-items-center gap-2">
+          <a href="#" class="gray">عن المتجر</a>
+          <a href="#" class="gray">تواصل معنا</a>
+          <a href="#" class="gray">سياسة خاصة</a>
+          <a href="#" class="gray"> شروط الخدمة</a>
+          <a href="#" class="gray">شروط الإسترجاع</a>
+        </div>
+        <div class="mt-4 d-flex justify-content-center align-items-center flex-row-reverse gap-4">
+          <a href="#">
+            <svg style="width: 25px; height: 25px" fill="var(--color-gray)" xmlns="http://www.w3.org/2000/svg"
+              enable-background="new 0 0 28 22.934" viewBox="0 0 28 22.934">
+              <path
+                d="M1.85,1.131c0,0,4.175,5.608,11.859,6.003c0,0-1.046-4.086,2.807-6.343s7.06,1.027,7.06,1.027s1.977-0.33,3.676-1.344c0,0-0.57,2.053-2.472,3.169c0,0,2.053-0.292,3.22-0.862c0,0-1.166,1.876-2.801,2.928c0,0,0.71,11.826-10.597,16.187C6.761,24.92,0,20.375,0,20.375s3.904,0.811,8.366-2.383c0,0-3.574,0.177-5.349-4.081c0,0,1.217,0.33,2.586-0.076c0,0-4.31-0.608-4.563-5.704c0,0,1.546,0.71,2.51,0.684C3.549,8.815-0.533,5.894,1.85,1.131z" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg style="width: 25px; height: 25px" fill="var(--color-gray)" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 256 256">
+              <rect width="256" height="256" fill="none" />
+              <circle cx="128" cy="128" r="40" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="12" />
+              <rect width="184" height="184" x="36" y="36" fill="none" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="12" rx="48" />
+              <circle cx="180" cy="76" r="10" />
+            </svg>
+          </a>
+          <a href="#">
+            <svg style="width: 25px; height: 25px" fill="var(--color-gray)" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 127.999 128">
+              <path fill="var(--color-gray)"
+                d="M64 7.989c-30.885 0-56.01 25.126-56.01 56.01 0 30.885 25.125 56.012 56.01 56.012 30.883 0 56.01-25.127 56.01-56.012 0-30.884-25.127-56.01-56.01-56.01zm15.83 35.358a1 1 0 0 1-1 1l-6.367.004c-4.201 0-4.969 1.636-4.969 4.858v6.684h10.92c.287 0 .561.124.75.34s.277.503.242.788l-1.555 12.033a1 1 0 0 1-.992.872h-9.365v29.879a1 1 0 0 1-1 1H54.07a1 1 0 0 1-1-1V69.926h-9.395a1 1 0 0 1-1-1V56.893a1 1 0 0 1 1-1h9.395v-7.875c0-10.43 6.312-16.908 16.475-16.908 4.369 0 8.23.325 9.416.482a1 1 0 0 1 .869.991v10.764z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center mt-5" style="margin-bottom: 90px;">
+        <div class="gray">© 2022 Codelivery. مدعوم من Lightfunnels.</div>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <p class="gray mb-0">عملة</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>حدد</option>
+            <option value="1">Euro</option>
+            <option value="2">United States Dollar</option>
+            <option value="3">Moroccan Dirham</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="floating-offer position-fixed bottom-0 start-0 w-100 bg-white border-top border-2">
+    <div class="d-flex justify-content-between align-items-center px-3 py-2">
+      <div class=" d-flex justify-content-start align-items-center flex-column text-start">
+        <p class="dark-blue mb-1">أفضل منتوجات العناية بالجلد و البشرة طبيعية 100%</p>
+        <p class="mb-0 w-100 current-price dark-blue" style="font-size: 16px;">€44.95 <span
+            class="text-decoration-line-through old-price mx-3" style="font-size: 15px;">
+            €192.40</span>
+        </p>
+      </div>
+      <button class="btn btn-lg   px-3 py-2 ">
+        إشتري الان - الدفع عند الإستلام
+      </button>
+    </div>
+  </div>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Splide.js JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function openBundle(bundleId) {
+        // Close all bundles and remove active class
+        document.querySelectorAll(".bundle").forEach(function (bundle) {
+          const collapseElement = bundle.querySelector(".collapse");
+          if (collapseElement) {
+            collapseElement.classList.remove("show");
           }
+          bundle.classList.remove("active");
+        });
+
+        // Open the selected bundle and add active class
+        const targetBundle = document.querySelector(`#selector${bundleId}`);
+        if (targetBundle) {
+          targetBundle.classList.add("show");
+          targetBundle.closest(".bundle").classList.add("active");
         }
+      }
 
-        // Initialize the first bundle to be open
-        openBundle(1);
+      // Initialize the first bundle to be open
+      openBundle(1);
 
-        // Add event listener to each radio button
-        const radios = document.querySelectorAll('input[name="option"]');
-        radios.forEach(function (radio) {
-          radio.addEventListener("change", function () {
-            const targetId = this.getAttribute("id");
-            const targetIndex = targetId.replace("option", "");
+      // Add event listener to each radio button
+      const radios = document.querySelectorAll('input[name="option"]');
+      radios.forEach(function (radio) {
+        radio.addEventListener("change", function () {
+          const targetId = this.getAttribute("id");
+          const targetIndex = targetId.replace("option", "");
 
-            // Open the selected bundle
-            openBundle(targetIndex);
-          });
+          // Open the selected bundle
+          openBundle(targetIndex);
         });
-
-        function updateCountdown() {
-          const endDate = new Date("2024-09-30T23:59:59");
-          const now = new Date();
-          const timeRemaining = endDate - now;
-
-          if (timeRemaining <= 0) {
-            document.getElementById("day").innerText = "00";
-            document.getElementById("hour").innerText = "00";
-            document.getElementById("minute").innerText = "00";
-            document.getElementById("sec").innerText = "00";
-            return;
-          }
-
-          const days = String(
-            Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
-          ).padStart(2, "0");
-          const hours = String(
-            Math.floor(
-              (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-            )
-          ).padStart(2, "0");
-          const minutes = String(
-            Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))
-          ).padStart(2, "0");
-          const seconds = String(
-            Math.floor((timeRemaining % (1000 * 60)) / 1000)
-          ).padStart(2, "0");
-
-          document.getElementById("day").innerText = days;
-          document.getElementById("hour").innerText = hours;
-          document.getElementById("minute").innerText = minutes;
-          document.getElementById("sec").innerText = seconds;
-        }
-
-        // Update the countdown every second
-        setInterval(updateCountdown, 1000);
-        updateCountdown(); // Initial call
-        var main = new Splide("#main-slider", {
-          type: "fade",
-          heightRatio: 0.5,
-          pagination: false,
-          arrows: false,
-          cover: true,
-          direction: "rtl", // Ensures the slider follows RTL direction
-        });
-
-        var thumbnails = new Splide("#thumbnail-slider", {
-          rewind: true,
-          fixedWidth: 104,
-          fixedHeight: 58,
-          isNavigation: true,
-          gap: 10,
-          focus: "center",
-          pagination: false,
-          arrows: false,
-          cover: true,
-          dragMinThreshold: {
-            mouse: 4,
-            touch: 10,
-          },
-          breakpoints: {
-            640: {
-              fixedWidth: 66,
-              fixedHeight: 38,
-            },
-          },
-          direction: "rtl",
-        });
-
-        main.sync(thumbnails);
-        main.mount();
-        thumbnails.mount();
       });
-    </script>
-  </body>
+
+      function updateCountdown() {
+        const endDate = new Date("2024-09-30T23:59:59");
+        const now = new Date();
+        const timeRemaining = endDate - now;
+
+        if (timeRemaining <= 0) {
+          document.getElementById("day").innerText = "00";
+          document.getElementById("hour").innerText = "00";
+          document.getElementById("minute").innerText = "00";
+          document.getElementById("sec").innerText = "00";
+          return;
+        }
+
+        const days = String(
+          Math.floor(timeRemaining / (1000 * 60 * 60 * 24))
+        ).padStart(2, "0");
+        const hours = String(
+          Math.floor(
+            (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          )
+        ).padStart(2, "0");
+        const minutes = String(
+          Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60))
+        ).padStart(2, "0");
+        const seconds = String(
+          Math.floor((timeRemaining % (1000 * 60)) / 1000)
+        ).padStart(2, "0");
+
+        document.getElementById("day").innerText = days;
+        document.getElementById("hour").innerText = hours;
+        document.getElementById("minute").innerText = minutes;
+        document.getElementById("sec").innerText = seconds;
+      }
+
+      // Update the countdown every second
+      setInterval(updateCountdown, 1000);
+      updateCountdown(); // Initial call
+      var main = new Splide("#main-slider", {
+        type: "fade",
+        heightRatio: 0.5,
+        pagination: false,
+        arrows: false,
+        cover: true,
+        direction: "rtl", // Ensures the slider follows RTL direction
+      });
+
+      var thumbnails = new Splide("#thumbnail-slider", {
+        rewind: true,
+        fixedWidth: 104,
+        fixedHeight: 58,
+        isNavigation: true,
+        gap: 10,
+        focus: "center",
+        pagination: false,
+        arrows: false,
+        cover: true,
+        dragMinThreshold: {
+          mouse: 4,
+          touch: 10,
+        },
+        breakpoints: {
+          640: {
+            fixedWidth: 66,
+            fixedHeight: 38,
+          },
+        },
+        direction: "rtl",
+      });
+
+      main.sync(thumbnails);
+      main.mount();
+      thumbnails.mount();
+      const productCard = document.getElementById("product-card");
+      const floatingOffer = document.querySelector(".floating-offer");
+
+      const observer = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              floatingOffer.style.transform = "translateY(100%)";
+            } else {
+              floatingOffer.style.transform = "translateY(0)";
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(productCard);
+    });
+
+  </script>
+</body>
+
 </html>
